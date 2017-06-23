@@ -1,0 +1,44 @@
+<<echo=FALSE, results=hide>>=
+
+# Marcelo C. - 13/06/17
+
+tmin <- sample(seq(from=20,to=55,by=1),1)
+v2 <- sample(seq(from=80,to=100,by=1),1)
+
+resp1 <- round(350/(3+tmin/60),1)
+resp2 <- round(45/v2*60,1)
+
+@
+
+\begin{question}
+
+(FUVEST) Um \^onibus sai de S\~ao Paulo \`as 8 h e chega a Jaboticabal, que dista 350 km da capital, as 11h$\Sexpr{tmin}$min. No trecho de Jundia\'i a Campinas, de aproximadamente 45 km, a sua velocidade foi constante e igual a \Sexpr{v2}
+
+\begin{answerlist}
+
+\item Qual \'e a velocidade m\'edia, em km/h no trajeto S\~ao Paulo-Jaboticabal? 
+
+\item Em quanto tempo, em minutos, o \^onibus cumpre o trecho Jundia\'i-Campinas?
+
+\end{answerlist}
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}:
+
+  \begin{answerlist}
+
+    \item \Sexpr{resp1}
+    \item \Sexpr{resp2}
+
+  \end{answerlist}
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{cloze}
+%% \exclozetype{num|num}
+%% \exsolution{\Sexpr{resp1}|\Sexpr{resp2}}
+%% \exname{Q05Velm}
+%% \extol{0.1|0.1}

@@ -1,0 +1,41 @@
+<<echo=FALSE, results=hide>>=
+
+# Created by vinibrenobr11 on 05/06/2017 at 20:37
+
+lap <- 300
+speed <- sample(seq(from=1,to=10,by=1),1)
+time_question <- sample(seq(from=1,to=60,by=1), 1)
+
+result <- (speed * 60 * time_question / lap)
+@
+
+\begin{question}
+
+Uma pessoa caminha numa pista de Cooper de $\Sexpr{lap}$m de comprimento, com velocidade m\'edia de $\Sexpr{speed}$m/s.
+
+\begin{answerlist}
+
+\item Quantas voltas ela completar\'a em $\Sexpr{time_question}$ minutos?
+
+\end{answerlist}
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}:
+
+\begin{answerlist}
+\item
+
+\Sexpr{result}
+  
+\end{answerlist}
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{cloze}
+%% \exclozetype{num}
+%% \exsolution{\Sexpr{result}}
+%% \exname{Q04Velm}
+%% \extol{0.02}

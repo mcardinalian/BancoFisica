@@ -1,0 +1,50 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+
+## QUESTION/ANSWER GENERATION
+questions <- character(5)
+solutions <- logical(5)
+explanations <- character(5)
+
+
+  questions[1] <- "Uma velocidade de 30 m/s significa que a cada 30 segundos, um objeto se move 30 metros."
+  solutions[1] <- FALSE
+  explanations[1] <- "FALSO! O objeto percorre 30 metros a cada 1 segundo"
+  questions[2] <- "Uma velocidade de 30 m/h significa que a cada 1 hora, um objeto se move 30 metros"
+  solutions[2] <- TRUE
+  explanations[2] <- "VERDADEIRO!"
+  questions[3] <- "Se um carro possui uma velocidade constante de 30 km/h, ele percorrer\U00E1 15 quil\U00F4metros em 30 minutos"
+  solutions[3] <- TRUE
+  explanations[3] <- "VERDADEIRO! Se em 60 minutos percorre 30 km, entao em 30 minutos percorre 15 quil\U00F4metros em media."
+  questions[4] <- "3,6 m/s eh equivalente a 1 km/h"
+  solutions[4] <- FALSE
+  explanations[4] <- "FALSO! 1 km/h = 1000 m/3600s e, portanto, 1 m/s = 3,6 km/h"
+  questions[5] <- "Um \U00F4nibus que gasta 15 minutos para percorrer 20 km possui velocidade de 80 km/h"
+  solutions[5] <- TRUE
+  explanations[5] <- "VERDADEIRO! 15 minutos corresponde a 1/4 de hora. Assim, 20/(1/4) = 80 km/h"
+@
+
+
+\begin{question}
+
+Assinale a(s) alternativa(s) correta(s)
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions, "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations)
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{mchoice}
+%% \exsolution{01101}
+%% \exname{Q02QuizVelm}
+
