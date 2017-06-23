@@ -1,4 +1,4 @@
-BANCO DE QUESTÕES DE FÍSICA
+﻿BANCO DE QUESTÕES DE FÍSICA
 ================
 
 Este é o repositório oficial do banco de questões de Física. Todas as questões devem ser programadas utilizando o pacote [exams](https://cran.r-project.org/web/packages/exams/index.html) do R. Nas próximas seções do documento podem ser encontradas instruções de como contribuir com o repositório.
@@ -19,9 +19,9 @@ Diretórios
 Pré-visualização
 ----------------
 
-Para pré-visualização de questões, pode-se utilizar o arquivo ME414-HTML.R, utilizando seu próprio local como [working directory](https://stat.ethz.ch/R-manual/R-devel/library/base/html/getwd.html) no RStudio.
+Para pré-visualização de questões, pode-se utilizar o arquivo CRIAR-HTML.R, utilizando seu próprio local como [working directory](https://stat.ethz.ch/R-manual/R-devel/library/base/html/getwd.html) no RStudio.
 
-No arquivo ME414-HTML.R, para visualizar cada questão, o código é como no exemplo a seguir:
+No arquivo CRIAR-HTML.R, para visualizar cada questão, o código é como no exemplo a seguir:
 
 ``` r
 ## Carregando os pacotes necessários
@@ -29,13 +29,13 @@ library(tools)
 library(exams)
 
 ## Definindo a pasta com as questões do exame
-myexam <- dir("./BancoDeQuestoes/aderencia")
+myexam <- dir("./BancoDeQuestoes/vm")
 
 ## Gerando HTML com o arquivo da questão
-set.seed(12014)
+set.seed(12017)
 exams2html(myexam, n = 1,solution=TRUE,
   encoding = "UTF-8",
-  edir = "aderencia",
+  edir = "vm",
   template = "templates/plain.html")
 ```
 
