@@ -1,7 +1,7 @@
-ME414-BancoDeQuestoes
+BANCO DE QUESTÕES DE FÍSICA
 ================
 
-Este é o repositório oficial do banco de questões para a disciplina ME414. Todas as questões devem ser programadas utilizando o pacote [exams](https://cran.r-project.org/web/packages/exams/index.html) do R. Nas próximas seções do documento podem ser encontradas instruções de como contribuir com o repositório.
+Este é o repositório oficial do banco de questões de Física. Todas as questões devem ser programadas utilizando o pacote [exams](https://cran.r-project.org/web/packages/exams/index.html) do R. Nas próximas seções do documento podem ser encontradas instruções de como contribuir com o repositório.
 
 Diretórios
 ----------
