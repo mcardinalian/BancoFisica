@@ -27,13 +27,15 @@ Uma composi\c{c}\~ao ferrovi\'aria (\Sexpr{elements-1} vag\~oes e uma locomotiva
 %% SOLUTION
 
 \begin{solution}
-\begin{answerlist}
 
-\item \Sexpr{result_a}
+  \begin{answerlist}
 
-\item \Sexpr{result_b}
+    \item \Sexpr{result_a}
 
-\end{answerlist}
+    \item \Sexpr{result_b}
+
+  \end{answerlist}
+
 \end{solution}
 
 %% META-INFORMATION

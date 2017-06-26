@@ -8,31 +8,20 @@ resp <- round(10/(dt/60),1)
 
 \begin{question}
 
-Um carro percorre uma dist\^ancia de 10 km durante $\Sexpr{dt}$ min.
-
-\begin{answerlist}
-\item Determine a velocidade m\'edia do carro em km/h.
-
-Arredonde sua resposta final para 1 decimal (utilize maior precis\~ao
+Um carro percorre uma dist\^ancia de 10 km durante $\Sexpr{dt}$ min. Determine a velocidade m\'edia do carro em km/h. Arredonde sua resposta final para 1 decimal (utilize maior precis\~ao
 nos passos intermedi\'arios).
-\end{answerlist}
 
 \end{question}
 
 %% SOLUTION
 \begin{solution}:
 
-\begin{answerlist}
-\item
-
-\Sexpr{resp}
+  \Sexpr{resp}
   
-\end{answerlist}
 \end{solution}
 
 %% META-INFORMATION
-%% \extype{cloze}
-%% \exclozetype{num}
+%% \extype{num}
 %% \exsolution{\Sexpr{resp}}
 %% \exname{Q06Velm}
 %% \extol{0.02}

@@ -11,31 +11,19 @@ result <- (speed * 60 * time_question / lap)
 
 \begin{question}
 
-Uma pessoa caminha numa pista de Cooper de $\Sexpr{lap}$m de comprimento, com velocidade m\'edia de $\Sexpr{speed}$m/s.
-
-\begin{answerlist}
-
-\item Quantas voltas ela completar\'a em $\Sexpr{time_question}$ minutos?
-
-\end{answerlist}
+Uma pessoa caminha numa pista de Cooper de $\Sexpr{lap}$m de comprimento, com velocidade m\'edia de $\Sexpr{speed}$m/s. Quantas voltas ela completar\'a em $\Sexpr{time_question}$ minutos?
 
 \end{question}
 
 %% SOLUTION
 \begin{solution}:
 
-\begin{answerlist}
-\item
-
-\Sexpr{result}
+  \Sexpr{result}
   
-\end{answerlist}
-
 \end{solution}
 
 %% META-INFORMATION
-%% \extype{cloze}
-%% \exclozetype{num}
+%% \extype{num}
 %% \exsolution{\Sexpr{result}}
 %% \exname{Q04Velm}
 %% \extol{0.02}
