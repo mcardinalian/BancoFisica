@@ -144,10 +144,16 @@ library(editR)
 editR(file = 'my_rmardown_question.Rmd')
 ```
 
+#### Git
+
+Guia prático de comandos do Git -> http://rogerdudler.github.io/git-guide/index.pt_BR.html
+
 ATENÇÃO
 -------
 
 Este banco de questões pode ser utilizado para gerar versões de uma mesma prova. Caso utilize o banco em uma prova, não disponibilizar as questões e soluções para os alunos. Cada aluno deverá revisar a prova individualmente. Isto é necessário pois o banco de questões não é grande o suficiente.
+
+http://rogerdudler.github.io/git-guide/index.pt_BR.html
 
 License
 -------
