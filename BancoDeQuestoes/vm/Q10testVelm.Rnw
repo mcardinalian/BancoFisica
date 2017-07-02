@@ -1,5 +1,5 @@
 <<echo=FALSE, results=hide>>=
-##PROGRAMADO POR: SAMARA
+##PROGRAMADO POR: MARCELO
 ##FONTE:
 ##TAGS:
 
