@@ -59,7 +59,7 @@ exams2html(myexam, n = 1,solution=TRUE,
            template = "templates/plain.html")
 
 
-############### dilatação térmica ##################
+############### dilatação trmica ##################
 ## Definindo a pasta com as questoes do exame
 myexam <- dir("./BancoDeQuestoes/dilatterm/")
 

@@ -1,27 +1,46 @@
 <<echo=FALSE, results=hide>>=
-##MARCELO C.
 
-dt <- sample(seq(from=5,to=59,by=1),1)
+# Created by vinibrenobr11 on 12/06/2017 at 19:58
 
-resp <- round(10/(dt/60),1)
+elements <- sample(seq(from=5, to=100, by=1), 1)
+speed <- sample(seq(from=10, to=40, by=1), 1)
+element_size <- sample(seq(from=1, to=20, by=1), 1)
+
+result_a <- round(element_size / speed, 2)
+result_b <- round(element_size * elements / speed, 2)
 @
 
 \begin{question}
 
-Um carro percorre uma dist\^ancia de 10 km durante $\Sexpr{dt}$ min. Determine a velocidade m\'edia do carro em km/h. Arredonde sua resposta final para 1 decimal (utilize maior precis\~ao
-nos passos intermedi\'arios).
+Uma composi\c{c}\~ao ferrovi\'aria (\Sexpr{elements-1} vag\~oes e uma locomotiva) desloca-se a \Sexpr{speed}m/s. Sendo o comprimento de cada elemento da composi\c{c}\~ao \Sexpr{element_size}m, qual \'e o tempo que o trem gasta para ultrapassar:
+
+\begin{answerlist}
+
+\item Um sinaleiro?
+
+\item Uma ponte de 100m de comprimento?
+
+\end{answerlist}
 
 \end{question}
 
 %% SOLUTION
-\begin{solution}:
 
-  \Sexpr{resp}
-  
+\begin{solution}
+
+  \begin{answerlist}
+
+    \item \Sexpr{result_a}
+
+    \item \Sexpr{result_b}
+
+  \end{answerlist}
+
 \end{solution}
 
 %% META-INFORMATION
-%% \extype{num}
-%% \exsolution{\Sexpr{resp}}
+%% \extype{cloze}
+%% \exclozetype{num|num}
+%% \exsolution{\Sexpr{result_a}|\Sexpr{result_b}}
 %% \exname{Q06Velm}
 %% \extol{0.02}

@@ -1,55 +1,28 @@
 <<echo=FALSE, results=hide>>=
-#segunda, 12 de junho de 2017 - Carlos Santana
-#Tentativa 1
+##PROGRAMADO POR: MARCELO C.
 
-d1 <- sample(seq(from=75,to=350,by=1),1)
-d2 <- sample(seq(from=150,to=400,by=1),1)
-v1 <- sample(seq(from=75,to=120,by=1),1)
-v2 <- sample(seq(from=40,to=120,by=1),1)
-dt <- d1+d2
+v1 <- sample(seq(from=20,to=30,by=1),1)
+v2 <- sample(seq(from=40,to=80,by=1),1)
 
-respa <- round(d1/v1,2)
-respb <- round(d2/v2,2)
-respc <- round(dt/(respa+respb+1),2)
+resp <- round(2*v1*v2/(v1+v2),1)
 @
+
 \begin{question}
-Um trem parte de uma cidade A em dire\c{c}\~ao a uma cidade B, distante $\Sexpr{d1}$km, com velocidade escalar constante de $\Sexpr{v1}$km/h. Ao atingir a cidade B, permanece ali por 1 hora. Parte ent\~ao para uma cidade C, distante $\Sexpr{d2}$km de B, com velocidade escalar constante de $\Sexpr{v2}$km/h. Determine:
 
-\begin{answerlist}
-
-  \item O tempo gasto pelo trem no percurso de A at\'e B.
-
-  \item O tempo gasto pelo trem no percurso de B at\'e C.
-
-  \item A velocidade escalar m\'edia do trem no percurso de A at\'e C. 
-  \\ \\
-
-\textit{Arredonde sua resposta final para 1 decimal (utilize maior precis\~ao
-nos passos intermedi\'arios).}
-
-\end{answerlist}
+Uma moto percorre a primeira metade de um percurso de 4 km com velocidade constante de $\Sexpr{v1}$ km/h e a segunda metade com $\Sexpr{v2}$ km/h. Calcule a velocidade escalar m\'edia da moto no percurso todo. Arredonde sua resposta final para 1 decimal (utilize maior precis\~ao
+nos passos intermedi\'arios).
 
 \end{question}
 
 %% SOLUTION
-\begin{solution}:
+\begin{solution}
+
+  \Sexpr{resp} km/h
   
-  \begin{answerlist}
-    \item
-      \Sexpr{respa}
-
-    \item
-      \Sexpr{respb}
-
-    \item
-      \Sexpr{respc}
-
-  \end{answerlist}
 \end{solution}
 
 %% META-INFORMATION
-%% \extype{cloze}
-%% \exclozetype{num|num|num}
-%% \exsolution{\Sexpr{respa}|\Sexpr{respb}|\Sexpr{respc}}
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
 %% \exname{Q08Velm}
-%% \extol{0.1|0.1|0.1}
+%% \extol{0.002}
