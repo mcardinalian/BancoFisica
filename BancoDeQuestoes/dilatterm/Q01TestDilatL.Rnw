@@ -8,6 +8,7 @@ dl=round(compr*25e-6*100*100,2)
 
 questions <- numeric(5)
 solutions <- logical(5)
+explanations <- character(5)
 
 questions[aleat[1]] <- dl
 solutions[aleat[1]] <- TRUE
@@ -19,6 +20,8 @@ questions[aleat[4]] <- round(dl/2,2)
 solutions[aleat[4]] <- FALSE
 questions[aleat[5]] <- round(dl*0.8,2)
 solutions[aleat[5]] <- FALSE
+
+explanations[1:5] <- ""
 
 @
 
