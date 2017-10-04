@@ -3,11 +3,11 @@
 # Created by vinibrenobr11
 
 # Calorias absorvidas e temperatura do corpo 1
-cal_1 <- sample(seq(from=10, to=500, by=1))
-c_1 <- sample(seq(from=1, to=5, by=1))
+cal_1 <- sample(seq(from=10, to=500, by=1), 1)
+c_1 <- sample(seq(from=1, to=5, by=1), 1)
 
 # Calorias absorvidas e temperatura do corpo 2
-cal_2 <- sample(seq(from=100, to=1500, by=1))
+cal_2 <- sample(seq(from=100, to=1500, by=1), 1)
 c_l_result <- round((cal_2 * c_1) / cal_1 / 2, 1) # massa é 2m
 @
 \usepackage[utf8]{inputenc}
