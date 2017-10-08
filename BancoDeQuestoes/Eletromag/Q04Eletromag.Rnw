@@ -10,24 +10,36 @@ freq <- round((gotas/segundos),2)
 \usepackage[utf8]{inputenc}
 \begin{question}
 Uma pessoa descuidada não fechou a torneira corretamente, de tal forma
-que, desta torneira, pingam 100 gotas de água em 20 s.
+que, desta torneira, pingam \Sexpr{gotas} gotas de água em \Sexpr{segundos} s.
 
-a) Qual é a frequência de gotejamento da torneira, em Hertz?
-b) Qual é o período de gotejamento?
-c) Se a velocidade das ondas na água é de 0,5 m/s,
-qual é a distância entre as ondulações?
+\begin{answerlist}
+
+\item Qual é a frequência de gotejamento da torneira, em Hertz?
+\item Qual é o período de gotejamento?
+\item Se a velocidade das ondas na água é de 0,5 m/s, qual é a distância entre as ondulações?
+
+\end{answerlist}
 
 \end{question}
 
 \begin{solution}
+  
+  \begin{answerlist}
+    \item
+      \Sexpr{freq}
+      
+      \item
+      \Sexpr{segundos}
 
+\end{answerlist}
 
-\Sexpr{resp}
 
 \end{solution}
 
 %% META-INFORMATION
-%% \extype{num}
-%% \exsolution{\Sexpr{resp}}
+%% \extype{cloze}
+%% \exclozetype{num|num}
+%% \exsolution{\Sexpr{comprimento}|\Sexpr{freq}|\Sexpr{segundos}}
 %% \exname{Q04Eletromag}
+%% \extol{0.1|0.1|1}
 %% \exusepackage[utf8]{inputenc}

@@ -18,25 +18,46 @@ vel = comprimento*freq
 Um trem de ondas propaga-se ao longo de uma corda tensa. A figura a seguir representa a corda 8,0 segundos após o início do movimento.
 
  \includegraphics[height=4cm]{\Sexpr{f}}
+\begin{answerlist}
 
 Determine para esta onda:
 
-a) O comprimento de onda (em cm);
-b) A frequência em Hz;
-c) O período em segundos;
-d) A amplitude em cm;
-e) A velocidade de propagação em cm/s;
+\item O comprimento de onda (em cm);
+\item A frequência em Hz;
+\item O período em segundos;
+\item A amplitude em cm;
+\item A velocidade de propagação em cm/s;
+
+\end{answerlist}
+
 \end{question}
 
 \begin{solution}
+  \begin{answerlist}
 
-
-\Sexpr{resp}
+    \item
+      \Sexpr{comprimento}
+    
+    \item
+      \Sexpr{freq}
+    
+    \item
+      \Sexpr{periodo}
+    
+    \item
+      \Sexpr{amplitude}
+    
+    \item
+      \Sexpr{vel}
+   
+  \end{answerlist}
 
 \end{solution}
 
 %% META-INFORMATION
-%% \extype{num}
-%% \exsolution{\Sexpr{resp}}
+%% \extype{cloze}
+%% \exclozetype{num|num|num|num}
+%% \exsolution{\Sexpr{comprimento}|\Sexpr{freq}|\Sexpr{periodo}|\Sexpr{amplitude}|\Sexpr{vel}}
 %% \exname{Q03Eletromag}
+%% \extol{0.1|0.1|1}
 %% \exusepackage[utf8]{inputenc}

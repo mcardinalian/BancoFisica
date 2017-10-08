@@ -1,0 +1,29 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: CARLOS SANTANA, em 05 de Outubro de 2017.
+
+comprimento <- sample(seq(from=0.1,to=2,by=0.1),1)
+freq <- sample(seq(from=5,to=200,by=5),1)
+
+resp <- round(((comprimento*0.6)*freq),2)
+
+@
+\usepackage[utf8]{inputenc}
+\begin{question}
+
+(PUC) Um motor produz vibrações transversais em uma corda de \Sexpr{comprimento} m de comprimento, tendo uma extremidade fixa a uma parede e a outra ligada no motor. A frequência produzida pelo motor é de \Sexpr{freq} Hz e na corda se estabelece uma onda estacionária, de acordo com a figura abaixo. Determine a velocidade de propagação. Determine a velocidade de propagação da onda na corda em m/s.
+
+\end{question}
+
+\begin{solution}
+
+<<echo=FALSE, results=hide, results=tex>>=
+@
+\Sexpr{resp} m/s
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q09Eletromag}
+%% \exusepackage[utf8]{inputenc}
