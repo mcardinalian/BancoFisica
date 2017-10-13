@@ -2,6 +2,17 @@
 library(tools)
 library(exams)
 
+############### temp ##################
+## Definindo a pasta com as questoes do exame
+myexam <- dir("./BancoDeQuestoes/temp")
+
+## Gerando HTML com o arquivo da questao
+set.seed(12017)
+exams2html(myexam, n = 1,solution=TRUE,
+           encoding = "UTF-8",
+           edir = "./BancoDeQuestoes/temp",
+           template = "templates/plain.html")
+
 ############### exemplos ##################
 ## Definindo a pasta com as questoes do exame
 myexam <- dir("./BancoDeQuestoes/exemplos/")
@@ -24,7 +35,7 @@ exams2html(myexam, n = 1,solution=TRUE,
   edir = "./BancoDeQuestoes/vm",
   template = "templates/plain.html")
 
-############### aceleração media ##################
+############### acelera??o media ##################
 ## Definindo a pasta com as questoes do exame
 myexam <- dir("./BancoDeQuestoes/acel/")
 
@@ -59,7 +70,7 @@ exams2html(myexam, n = 1,solution=TRUE,
            template = "templates/plain.html")
 
 
-############### dilatação trmica ##################
+############### dilata??o trmica ##################
 ## Definindo a pasta com as questoes do exame
 myexam <- dir("./BancoDeQuestoes/dilatterm/")
 
@@ -70,3 +81,24 @@ exams2html(myexam, n = 1,solution=TRUE,
            edir = "./BancoDeQuestoes/dilatterm",
            template = "templates/plain.html")
 
+############### termodinamica ##################
+## Definindo a pasta com as questoes do exame
+myexam <- dir("./BancoDeQuestoes/termodinamica")
+
+## Gerando HTML com o arquivo da questao
+set.seed(12017)
+exams2html(myexam, n = 1,solution=TRUE,
+           encoding = "UTF-8",
+           edir = "./BancoDeQuestoes/termodinamica",
+           template = "templates/plain.html")
+
+############### eletromagnetismo ##################
+## Definindo a pasta com as questoes do exame
+myexam <- dir("./BancoDeQuestoes/eletromag")
+
+## Gerando HTML com o arquivo da questao
+set.seed(12017)
+exams2html(myexam, n = 1,solution=TRUE,
+           encoding = "UTF-8",
+           edir = "./BancoDeQuestoes/eletromag",
+           template = "templates/plain.html")

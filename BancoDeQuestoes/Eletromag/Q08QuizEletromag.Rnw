@@ -23,6 +23,10 @@ solutions[aleat[5]] <- TRUE
 \usepackage[utf8]{inputenc}
 \begin{question}
 A figura a seguir representa ondas que se propagam com a mesma velocidade. Em relação às duas ondas, assinale a alternativa correta:
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
 \end{question}
 
 \begin{solution}

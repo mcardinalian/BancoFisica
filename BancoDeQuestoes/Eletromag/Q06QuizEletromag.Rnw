@@ -26,6 +26,11 @@ solutions[aleat[5]] <- TRUE
 os aparelhos cujo funcionamento envolva a emissão ou a recepção de ondas
 eletromagnéticas. O procedimento é utilizado para eliminar fontes de radiação que
 possam interferir nas comunicações via rádio dos pilotos com a torre de controle. A propriedade das ondas emitidas que justifica o procedimento adotado é o fato de:
+
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
 \end{question}
 
 \begin{solution}

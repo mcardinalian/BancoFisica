@@ -12,7 +12,8 @@ resp = lambda*amplitude
 
 \usepackage[utf8]{inputenc}
 \begin{question}
-Conforme a figura abaixo, uma onda se propaga em um meio unidimensional, com frequência de 4Hz.Determine a amplitude, comprimento de onda e a velocidade da onda.
+Conforme a figura abaixo, uma onda se propaga em um meio unidimensional, com frequência de 4Hz.
+Determine a amplitude, comprimento de onda e a velocidade da onda.
 
  \includegraphics[height=4cm]{\Sexpr{f}}
  
