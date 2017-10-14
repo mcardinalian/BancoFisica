@@ -39,7 +39,7 @@ answerlist(
 \end{solution}
 
 %% META-INFORMATION
-%% \extype{num}
+%% \extype{mchoice}
 %% \exsolution{\Sexpr{mchoice2string(solutions, single = TRUE)}}
 %% \exname{Q07Eletromag}
 %% \exusepackage[utf8]{inputenc}  
