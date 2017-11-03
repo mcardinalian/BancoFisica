@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+
+
+<question type="category">
+<category>
+<text>$course$/eletromag-12017/Exercise 1</text>
+</category>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> Q1 : Q01Eletromag </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>
+Conforme a figura abaixo, uma onda se propaga em um meio unidimensional, com frequência de 4Hz.
+Determine a amplitude, comprimento de onda e a velocidade da onda.
+<div class="p"><!----></div>
+ <img src="https://i.imgur.com/C3gg3jX.png" alt="https://i.imgur.com/C3gg3jX.png" />
+<div class="p"><!----></div>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<div class="p"><!----></div>
+48
+<div class="p"><!----></div>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>48</text>
+<tolerance>0</tolerance>
+</answer>
+</question>
+
+
+<question type="category">
+<category>
+<text>$course$/eletromag-12017/Exercise 2</text>
+</category>
+</question>
+
+
+<question type="cloze">
+<name>
+<text> Q2 : Q03Eletromag </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>
+Um trem de ondas propaga-se ao longo de uma corda tensa. A figura a seguir representa a corda 8,0 segundos após o início do movimento.
+<div class="p"><!----></div>
+ <img src="https://i.imgur.com/ufQ5yBk.png" alt="https://i.imgur.com/ufQ5yBk.png" />
+<div class="p"><!----></div>
+<ol type = "a">
+<li> Determine para esta onda: {1:NUMERICAL:=8:0.1} </li>
+<li> A velocidade de propagação em cm/s; {1:NUMERICAL:=NA:0.1} </li>
+<li> O comprimento de onda (em cm); {1:NUMERICAL:=0.25:0.1} </li>
+<li> A frequência em Hz; {1:NUMERICAL:=8:1} </li>
+<li> O período em segundos; {1:NUMERICAL:=5:0.1} </li>
+<li> A amplitude em cm; {1:NUMERICAL:=2:0.1} </li>
+</ol>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+
+<ol type = "a">
+<li> 8 </li>
+<li>       0.25 </li>
+<li>       8 </li>
+<li>       5 </li>
+<li>       2 </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>5</defaultgrade>
+</question>
+
+
+<question type="category">
+<category>
+<text>$course$/eletromag-12017/Exercise 3</text>
+</category>
+</question>
+
+
+<question type="cloze">
+<name>
+<text> Q3 : Q04Eletromag </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>
+Uma pessoa descuidada não fechou a torneira corretamente, de tal forma
+que, desta torneira, pingam 54 gotas de água em 76 s.
+<div class="p"><!----></div>
+<ol type = "a">
+<li> Qual é a frequência de gotejamento da torneira, em Hertz? {1:NUMERICAL:=8:0.1} </li>
+<li> Qual é o período de gotejamento? {1:NUMERICAL:=0.71:0.1} </li>
+<li> Se a velocidade das ondas na água é de 0,5 m/s, qual é a distância entre as ondulações? {1:NUMERICAL:=76:1} </li>
+</ol>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+
+<ol type = "a">
+<li> 0.71 </li>
+<li>       76 </li>
+<li>  </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>3</defaultgrade>
+</question>
+
+
+<question type="category">
+<category>
+<text>$course$/eletromag-12017/Exercise 4</text>
+</category>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> Q4 : Q06QuizEletromag </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>
+(ENEM) Em viagens de avião, é solicitado aos passageiros o desligamento de todos
+os aparelhos cujo funcionamento envolva a emissão ou a recepção de ondas
+eletromagnéticas. O procedimento é utilizado para eliminar fontes de radiação que
+possam interferir nas comunicações via rádio dos pilotos com a torre de controle. A propriedade das ondas emitidas que justifica o procedimento adotado é o fato de:
+<div class="p"><!----></div>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+
+<ol type = "a">
+<li> <b> Falso </b> / <b> Falso </b> / <b> Verdadeiro </b> / <b> Falso </b> / <b> Falso </b> </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>100</text>
+<tolerance>0</tolerance>
+</answer>
+</question>
+
+
+<question type="category">
+<category>
+<text>$course$/eletromag-12017/Exercise 5</text>
+</category>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> Q5 : Q07QuizEletromag </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>
+(ENEM-2016/2ª Aplicação) O eletrocardiograma, exame utilizado para avaliar o estado do coração de um paciente, trata-se do registro da atividade elétrica do coração ao longo de um certo intervalo de tempo. A figura representa o eletrocardiograma de um paciente adulto, descansado, não fumante, em um ambiente com temperatura agradável. Nessas condições, é considerado normal um ritmo cardíaco entre 60 e 100 batimentos por minuto. Com base no eletrocardiograma apresentado, identifica-se que a frequência cardíaca do paciente é:
+<div class="p"><!----></div>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+
+<ol type = "a">
+<li> <b> Falso </b> / <b> Falso </b> / <b> Falso </b> / <b> Verdadeiro </b> / <b> Falso </b> </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>10</text>
+<tolerance>0</tolerance>
+</answer>
+</question>
+
+
+<question type="category">
+<category>
+<text>$course$/eletromag-12017/Exercise 6</text>
+</category>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> Q6 : Q08QuizEletromag </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>
+A figura a seguir representa ondas que se propagam com a mesma velocidade. Em relação às duas ondas, assinale a alternativa correta:
+<div class="p"><!----></div>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+
+<ol type = "a">
+<li> <b> Falso </b> / <b> Verdadeiro </b> / <b> Falso </b> / <b> Falso </b> / <b> Falso </b> </li>
+</ol>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>1000</text>
+<tolerance>0</tolerance>
+</answer>
+</question>
+
+
+<question type="category">
+<category>
+<text>$course$/eletromag-12017/Exercise 7</text>
+</category>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> Q7 : Q09Eletromag </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>
+(PUC) Um motor produz vibrações transversais em uma corda de 1 m de comprimento, tendo uma extremidade fixa a uma parede e a outra ligada no motor. A frequência produzida pelo motor é de 30 Hz e na corda se estabelece uma onda estacionária, de acordo com a figura abaixo. Determine a velocidade de propagação. Determine a velocidade de propagação da onda na corda em m/s.
+<div class="p"><!----></div>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<div class="p"><!----></div>
+18 m/s
+<div class="p"><!----></div>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>18</text>
+<tolerance>0</tolerance>
+</answer>
+</question>
+
+
+<question type="category">
+<category>
+<text>$course$/eletromag-12017/Exercise 8</text>
+</category>
+</question>
+
+
+<question type="numerical">
+<name>
+<text> Q8 : Q10Eletromag </text>
+</name>
+<questiontext format="html">
+<text><![CDATA[<p>
+(UFPE) A figura a seguir mostra esquematicamente as ondas na superfície d'água de um lago, produzidas por uma fonte de frequência 1.5 Hzm localizada no ponto A. As linhas cheias correspondem às cristas, e as pontilhadas representam os vales em um certo instante em tempo. Qual o intervalo de tempo, em segundos, para que uma frente de onda percorra a distância da fonte até o ponto B, distante 60 cm?
+<div class="p"><!----></div>
+</p>]]></text>
+</questiontext>
+<generalfeedback format="html">
+<text><![CDATA[<p>
+<div class="p"><!----></div>
+80s
+<div class="p"><!----></div>
+</p>]]></text>
+</generalfeedback>
+<penalty>0</penalty>
+<defaultgrade>1</defaultgrade>
+<answer fraction="100" format="moodle_auto_format">
+<text>80</text>
+<tolerance>0</tolerance>
+</answer>
+</question>
+
+</quiz>
