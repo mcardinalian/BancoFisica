@@ -6,8 +6,6 @@ questions <- numeric(5)
 solutions <- logical(5)
 
 
-
-
 questions[aleat[1]] <- "a Lua e estrelas."
 questions[aleat[2]] <- "somente a Lua."
 questions[aleat[3]] <- "somente estrelas."
