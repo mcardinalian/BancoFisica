@@ -1,0 +1,63 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: CARLOS SANTANA, em 24 de Setembro de 2017.
+
+
+f <- "https://i.imgur.com/ufQ5yBk.png"
+
+comprimento = 8
+amplitude = 5
+oscilacao = 2
+periodo = 8
+
+freq = oscilacao/periodo
+vel = comprimento*freq
+@
+
+\usepackage[utf8]{inputenc}
+\begin{question}
+Um trem de ondas propaga-se ao longo de uma corda tensa. A figura a seguir representa a corda 8,0 segundos após o início do movimento.
+
+ \includegraphics[height=4cm]{\Sexpr{f}}
+\begin{answerlist}
+
+Determine para esta onda:
+
+\item O comprimento de onda (em cm);
+\item A frequência em Hz;
+\item O período em segundos;
+\item A amplitude em cm;
+\item A velocidade de propagação em cm/s;
+
+\end{answerlist}
+
+\end{question}
+
+\begin{solution}
+  \begin{answerlist}
+
+    \item
+      \Sexpr{comprimento}
+    
+    \item
+      \Sexpr{freq}
+    
+    \item
+      \Sexpr{periodo}
+    
+    \item
+      \Sexpr{amplitude}
+    
+    \item
+      \Sexpr{vel}
+   
+  \end{answerlist}
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{cloze}
+%% \exclozetype{num|num|num|num}
+%% \exsolution{\Sexpr{comprimento}|\Sexpr{freq}|\Sexpr{periodo}|\Sexpr{amplitude}|\Sexpr{vel}}
+%% \exname{Q03Eletromag}
+%% \extol{0.1|0.1|1}
+%% \exusepackage[utf8]{inputenc}
