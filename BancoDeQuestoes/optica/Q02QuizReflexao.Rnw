@@ -1,0 +1,45 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: CARLOS SANTANA, em 10 de Dezembro de 2017.
+##FONTE: MACKENZIE-SP
+
+aleat = sample(1:5)
+
+questions <- numeric(5)
+solutions <- logical(5)
+
+questions[aleat[1]] <- "real e direta."
+questions[aleat[2]] <- "real e invertida."
+questions[aleat[3]] <- "virtual e direta."
+questions[aleat[4]] <- "virtual e invertida."
+questions[aleat[5]] <- "imprópria, localizada no infinito."
+
+solutions[aleat[1]] <- FALSE
+solutions[aleat[2]] <- TRUE
+solutions[aleat[3]] <- FALSE
+solutions[aleat[4]] <- FALSE
+solutions[aleat[5]] <- FALSE
+@
+\usepackage[utf8]{inputenc}
+\begin(question)
+  (MACKENZIE-SP) Um objeto real se encontra sobre o eixo principal de um
+espelho côncavo, de distância focal 10cm, e a 20cm do vértice do espelho.
+Sendo obedecidas as condições de Gauss, sua imagem é:
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
+
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions, "Verdadeiro", "Falso"), "}"))
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{schoice}
+%% \exsolution{\Sexpr{schoice2string(solutions)}}
+%% \exname{Q02QuizReflexao}
+%% \exusepackage[utf8]{inputenc}

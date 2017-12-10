@@ -1,0 +1,43 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: CARLOS SANTANA, em 10 de Dezembro de 2017.
+##FONTE: FGV
+
+aleat = sample(1:5)
+
+questions <- numeric(5)
+solutions <- logical(5)
+
+questions[aleat[1]] <- "convexo, convexo e côncavo."
+questions[aleat[2]] <- "côncavo, convexo e convexo."
+questions[aleat[3]] <- "convexo, côncavo e côncavo."
+questions[aleat[4]] <- "côncavo, convexo e côncavo."
+questions[aleat[5]] <- "côncavo, côncavo e convexo."
+
+solutions[aleat[1]] <- FALSE
+solutions[aleat[2]] <- FALSE
+solutions[aleat[3]] <- FALSE
+solutions[aleat[4]] <- TRUE
+solutions[aleat[5]] <- FALSE
+@
+\usepackage[utf8]{inputenc}
+\begin(question)
+  (FGV) Na “sala dos espelhos” de um parque, Maria se diverte observando suas imagens em diferentes espelhos. No primeiro, a imagem formada é invertida e aumentada; no segundo, invertida e reduzida e, no terceiro, direita e reduzida. O primeiro, o segundo e o terceiro espelhos são, respectivamente,
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
+
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions, "Verdadeiro", "Falso"), "}"))
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{schoice}
+%% \exsolution{\Sexpr{schoice2string(solutions)}}
+%% \exname{Q01QuizReflexao}
+%% \exusepackage[utf8]{inputenc}
