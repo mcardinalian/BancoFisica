@@ -1,0 +1,29 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: CARLOS SANTANA, em 06 de Janeiro de 2018.
+##FONTE: BRASIL ESCOLA / (PUC-MG)
+
+massa <- sample(seq(from=1, to= 60, by=1), 1)
+vm <- round((sample(seq(from=2, to= 50, by=2), 1))/3.6,1)
+
+a <- abs(vm/t) ##modulo de a
+
+resp <- massa/a
+@
+\usepackage[utf8]{inputenc}
+\begin(question)
+(PUC-MG) Um automóvel, com uma massa de \sexpr{massa} kg, tem uma velocidade de \sexpr{vm} km/h quando os freios são acionados, provocando uma desaceleração constante e fazendo com que o carro pare em 10 s, a força aplicada ao carro pelos freios vale, em newtons:
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}
+  
+  \Sexpr{resp} N
+  
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q03Newton}
+%% \extol{0.001}

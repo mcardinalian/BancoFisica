@@ -1,0 +1,31 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: CARLOS SANTANA, em 06 de Janeiro de 2018.
+##FONTE: BRASIL ESCOLA
+
+massa <- sample(seq(from=10, to= 50, by=1), 1)
+forca <- sample(seq(from=80, to= 500, by=1), 1)
+
+forcaAtrito <- 0.2*massa*10
+forcaResultante <-forca-forcaAtrito
+
+resp <- forcaResultante/massa
+@
+\usepackage[utf8]{inputenc}
+\begin(question)
+Um bloco de massa \sexpr{massa} Kg é empurrado sobre uma superfície horizontal por uma força F = \sexpr{forca} N. Sabendo que o coeficiente de atrito cinético (μc) entre o bloco e a superfície é igual a 0,2, calcule a aceleração sofrida pelo bloco.
+Considere gravidade valendo 10.
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}
+  
+  \Sexpr{resp} m/s²
+  
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q02Newton}
+%% \extol{0.01}

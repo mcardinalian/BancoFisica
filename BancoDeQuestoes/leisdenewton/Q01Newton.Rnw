@@ -1,0 +1,28 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: CARLOS SANTANA, em 06 de Janeiro de 2018.
+##FONTE: BRASIL ESCOLA
+
+massa <- sample(seq(from=0.1, to= 3, by=0.1), 1)
+
+resp <- 0
+@
+\usepackage[utf8]{inputenc}
+\begin(question)
+
+Uma folha de massa igual \Sexpr{massa} cai de uma árvore com velocidade constante. Determine a força resultante sobre essa folha, sabendo que ela está sujeita à força de resistência do ar.
+
+Dado: a aceleração da gravidade tem valor igual a 9,8 m/s².
+\end{question}
+
+%% SOLUTION
+\begin{solution}
+  
+  \Sexpr{resp} m/s
+  
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q01Newton}
+%% \extol{0.01}
