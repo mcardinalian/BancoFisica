@@ -2,7 +2,6 @@
 ##PROGRAMADO POR: CARLOS SANTANA, em 24 de Setembro de 2017.
 
 aleat = sample(1:5)
-
 questions <- numeric(5)
 solutions <- logical(5)
 
@@ -22,11 +21,7 @@ solutions[aleat[5]] <- TRUE
 
 \usepackage[utf8]{inputenc}
 \begin{question}
-(ENEM) Em viagens de avião, é solicitado aos passageiros o desligamento de todos
-os aparelhos cujo funcionamento envolva a emissão ou a recepção de ondas
-eletromagnéticas. O procedimento é utilizado para eliminar fontes de radiação que
-possam interferir nas comunicações via rádio dos pilotos com a torre de controle. A propriedade das ondas emitidas que justifica o procedimento adotado é o fato de:
-
+(ENEM) Em viagens de avião, é solicitado aos passageiros o desligamento de todos os aparelhos cujo funcionamento envolva a emissão ou a recepção de ondas eletromagnéticas. O procedimento é utilizado para eliminar fontes de radiação que possam interferir nas comunicações via rádio dos pilotos com a torre de controle. A propriedade das ondas emitidas que justifica o procedimento adotado é o fato de:
 
 <<echo=FALSE, results=hide, results=tex>>=
 answerlist(questions)
@@ -45,5 +40,5 @@ answerlist(
 %% META-INFORMATION
 %% \extype{mchoice}
 %% \exsolution{\Sexpr{mchoice2string(solutions, single = TRUE)}}
-%% \exname{Q06Eletromag}
+%% \exname{Q06QuizOndas}
 %% \exusepackage[utf8]{inputenc}  
