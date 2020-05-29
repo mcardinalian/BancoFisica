@@ -1,0 +1,41 @@
+<<echo=FALSE, results=hide>>=
+#Programado por: Marcelo C.
+options(OutDec=",")
+tf <- sample(seq(from=10,to=30,by=1),1)
+te <- sample(seq(from=tf+50,to=140,by=1),1)
+tk <- sample(seq(from=300,to=400,by=5),1)
+
+resp <- round((tk-273)*(te-tf)/100+tf,digits=1)
+@
+\usepackage[utf8]{inputenc}
+
+\begin{question}
+
+(UPE) Construiu-se um termômetro X, com ponto de fusão do gelo \Sexpr{tf} $^\circ X$ e ponto de ebulição da água \Sexpr{te} $^\circ X$. Qual leitura se teria para a temperatura de \Sexpr{tk} K?
+\textit{Caso necessário, arredonde sua resposta para uma casa decimal}
+\end{question}
+
+%% SOLUTION
+\begin{solution}
+  
+Utilizando a escala kelvin como referência, a temperatura de fusão e ebulição correspondente valem, respectivamente, 273 e 373 K. Sendo assim, fazendo uma regra de três composta, temos:
+	
+	\begin{equation*}
+    \frac{t_x-\Sexpr{tf}}{\Sexpr{te}-\Sexpr{tf}}=\frac{\Sexpr{tk}-273}{373-273}
+	\end{equation*}
+
+onde $t_x$ é a temperatura na escala $^\circ X$ correspondente à \Sexpr{tk} K. Resolvendo a expressão para $t_x$, temos:
+
+  \begin{equation*}
+  t_x = \Sexpr{resp} ^\circ X
+  \end{equation*}
+\end{solution}
+
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q19Term}
+%% \extol{0.1}
