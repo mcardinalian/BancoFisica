@@ -1,0 +1,73 @@
+<<echo=FALSE, results=hide>>=
+#Programado por: Jmduly - correção Marcelo C (adequação das temperaturas)
+options(OutDec=",")
+
+temp1 <- sample(seq(from=101, to=103.6, by=0.2),1)
+
+dt <- sample(seq(from=2.0,to=2.1, by=0.1),1)
+
+resp1 <- round(5/9*(temp1 - 32), digits = 1)
+
+resp2 <- round(5/9*((temp1-dt) - 32), digits = 1)
+@
+\usepackage[utf8]{inputenc}
+\begin{question}
+
+Um turista brasileiro sente-se mal durante uma viagem à Nova Iorque. Ao ser examinado em um hospital local a enfermeira lhe diz que sua temperatura naquele momento era $\Sexpr{temp1}$ $^\circ$, mas que ele deveria ficar mais tranquilo, pois sua febre estava diminuindo, tendo já baixado $\Sexpr{dt}$$^\circ$. Após o susto, o turista percebeu que sua temperatura havia sido medida em uma escala Fahrenheit. 
+
+\begin{answerlist}
+
+  \item Qual era a sua temperatura anteriormente em $^\circ$ C?
+  
+  \item E qual sua temperatura atual em $^\circ$ C?
+  
+\end{answerlist}
+
+\end{question}
+
+
+%% SOLUTION
+\begin{solution}:
+    
+  \begin{answerlist}
+    
+    \item
+    
+    Aplicando a equação de transformação de temperaturas de fahrenheit para célsius, temos:
+    
+    \begin{equation*}
+      t_c = \frac{5}{9}\cdot(\Sexpr{temp1}-32) 
+    \end{equation*}
+    
+    portanto,
+    
+    \begin{equation*}
+      t_c = \Sexpr{resp1} ^\circ C
+    \end{equation*}
+    
+    \item
+    
+    Dado que a variação de $1 ^\circ$ C corresponde a variação de $1,8 ^\circ$ F, temos que a temperatura final é
+    
+    \begin{equation*}
+      t_{cf} =t_c - \Sexpr{dt} \cdot \frac{1^\circ C} {1,8 ^\circ F}
+    \end{equation*}
+    
+    portanto,
+    
+    \begin{equation*}
+      t_{cf} =\Sexpr{resp2} ^\circ C
+    \end{equation*}    
+    
+  \end{answerlist}
+\end{solution}
+
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
+%% META-INFORMATION
+%% \extype{cloze}
+%% \exclozetype{num|num}
+%% \exsolution{\Sexpr{resp1}|\Sexpr{resp2}}
+%% \exname{Q16Term}
+%% \extol{0.05|0.05}

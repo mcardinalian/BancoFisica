@@ -1,7 +1,7 @@
 <<echo=FALSE, results=hide>>=
 ##MARCELO C.
-
-dtc <- sample(seq(from=5,to=70,by=1),1) 
+options(OutDec=",")
+dtc <- sample(seq(from=5,to=90,by=1),1) 
 
 resp1 <- dtc     
 resp2 <- 1.8*dtc 
@@ -9,12 +9,12 @@ resp2 <- 1.8*dtc
 
 \begin{question}
 
-Quando um term\^ometro na escala Celsius sofrer uma varia\c{c}\~ao de $\Sexpr{dtc}$ graus em sua temperatura, qual ser\'a a correspondente varia\c{c}\~ao de temperatura para:
+Quando um termômetro na escala Celsius sofrer uma variação de $\Sexpr{dtc}$ graus em sua temperatura, qual será a correspondente variação de temperatura para:
 
 \begin{answerlist}
-\item Um term\^ometro graduado na escala Kelvin
+\item Um termômetro graduado na escala Kelvin
 
-\item Um term\^ometro graduado na escala Fahrenheit.
+\item Um termômetro graduado na escala Fahrenheit.
 
 \end{answerlist}
 
@@ -34,6 +34,9 @@ Quando um term\^ometro na escala Celsius sofrer uma varia\c{c}\~ao de $\Sexpr{dt
 \end{answerlist}
 \end{solution}
 
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
 %% META-INFORMATION
 %% \extype{cloze}
 %% \exclozetype{num|num}

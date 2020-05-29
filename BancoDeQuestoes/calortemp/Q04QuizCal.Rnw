@@ -43,5 +43,5 @@ answerlist(
 %% META-INFORMATION
 %% \extype{schoice}
 %% \exsolution{\Sexpr{mchoice2string(solutions, single = TRUE)}}
-%% \exname{Q01TestDilatL}
+%% \exname{Q04QuizCal}
 %% \exusepackage[utf8]{inputenc}

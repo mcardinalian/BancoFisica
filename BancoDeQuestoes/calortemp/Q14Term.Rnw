@@ -1,0 +1,42 @@
+<<echo=FALSE, results=hide>>=
+#Marcelo C.
+
+options(OutDec=",")
+
+tempb <- sample(seq(from=10,to=22,by=0.5),1)
+tempa <- sample(seq(from=tempb+5,to=32,by=0.5),1)
+dif=tempa-tempb
+resp <- round(dif*1.8, digits = 1)
+@
+\usepackage[utf8]{inputenc}
+
+\begin{question}
+
+A amplitude térmica é a diferença entre a máxima e a mínima temperatura de algum local e num determinado período de tempo. No Brasil, os estados do norte e nordeste geralmente apresentam uma amplitude térmica baixa. Isso porque os climas tropical e equatorial que atuam na região são caracterizados por altas temperaturas o ano todo. Já os estados do sudeste, sul e centro-oeste em algumas estações do ano apresentam uma amplitude térmica alta, sobretudo no inverno. Sabendo que, durante um dia, a temperatura máxima é de $\Sexpr{tempa}$ $^\circ$C e a mínima é de $\Sexpr{tempb}$ $^\circ$C, determine o valor da amplitude térmica na escala Fahrenheit?
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}
+  
+  A amplitude térmica em graus célsius é $\Sexpr{tempa}-\Sexpr{tempb}=\Sexpr{dif}^\circ$ C. Dado que a razão entre variações de temperatura em célsius e fahrenheit é $\frac{1,8 ^\circ F}{1 ^\circ C}=1$, temos:
+
+  \begin{equation*}
+    \Delta t_f = \Sexpr{dif} ^\circ C \cdot \frac{1,8 ^\circ F}{1 ^\circ C}
+  \end{equation*}
+  
+  Portanto, a amplitude em $^\circ$ F é:
+  \begin{equation*}
+    \Delta t_f =\Sexpr{resp} ^\circ F
+  \end{equation*}
+\end{solution}
+
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
+
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q14Term}
+%% \extol{0.1}

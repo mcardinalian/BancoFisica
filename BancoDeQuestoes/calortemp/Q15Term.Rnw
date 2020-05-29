@@ -1,0 +1,66 @@
+<<echo=FALSE, results=hide>>=
+  #Programado por: Jmduly
+  options(OutDec=",")
+  temp1 <- sample(seq(from=30,to=60,by=1),1)
+  
+  temp2 <- sample(seq(from=60,to=90,by=1),1)
+  
+  resp1 <- round((temp2-temp1)*1.8, digits = 1)
+  
+  resp2 <- (temp2-temp1)
+@
+  
+  \usepackage[utf8]{inputenc}
+  
+  \begin{question}
+  
+  Uma panela com água é aquecida de $\Sexpr{temp1}$ $^\circ C$ para $\Sexpr{temp2}$ $^\circ C$.
+  \\
+  \begin{answerlist}
+  
+  \item A variação de temperatura sofrida pela panela com água, na escala Fahrenheit, foi de:
+
+  \item A variação de temperatura sofrida pela panela com água, na escala kelvin, foi de:
+  
+  \end{answerlist}
+  
+  \end{question}
+  
+  %% SOLUTION
+\begin{solution}:
+    
+    \begin{answerlist}
+  \item
+
+  Sabendo-se que a variação de $1^\circ$ C corresponde a variação de $1,8^\circ$ F, temos:
+  
+  \begin{equation}
+    \Delta t_f = (\Sexpr{temp2}-\Sexpr{temp1}) \cdot \frac{1,8 ^\circ F}{1 ^\circ C}
+  \end{equation}
+  
+  Portanto,
+  
+  \begin{equation}
+    \Delta t_f = \Sexpr{resp1} ^\circ F
+  \end{equation}
+  
+  \item
+  
+  Sabendo-se que a variação de $1^\circ$ C corresponde a variação de $1$ K, a variação deverá ser a mesma, isto é, 
+  
+  \begin{equation}
+    \Delta t_k = \Sexpr{temp2}-\Sexpr{temp1} = \Sexpr{resp2} K
+  \end{equation}
+  
+  \end{answerlist}
+\end{solution}
+
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
+  %% META-INFORMATION
+  %% \extype{cloze}
+  %% \exclozetype{num|num}
+  %% \exsolution{\Sexpr{resp1}|\Sexpr{resp2}}
+  %% \exname{Q15Term}
+  %% \extol{0.1|0.1}
