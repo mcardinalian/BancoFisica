@@ -3,9 +3,6 @@
 
 m <- sample(seq(from=10,to=400,by=5),1)
 resp <- round(600/m,1)
-
-f <- "https://raw.githubusercontent.com/mcardinalian/BancoFisica/master/BancoDeQuestoes/calorimetria/Q15CalL.jpg?token=AYwnUqw6DMFtMBxgV8WVNEsNd55TqyO_ks5Z-2ZlwA%3D%3D"
-
 @
 \usepackage[portuguese]{babel}
 \usepackage{graphicx}
@@ -13,8 +10,6 @@ f <- "https://raw.githubusercontent.com/mcardinalian/BancoFisica/master/BancoDeQ
 \begin{question}
  
 O gráfico representa a temperatura de uma amostra de massa \Sexpr{m} gramas de determinado metal, inicialmente sólido, em função da quantidade de calor por ela absorvida. Determine o calor latente de fusão desse metal, em cal/g. \textit{Arredonde sua resposta para 1 casa decimal.}
-
-\includegraphics[height=10cm]{\Sexpr{f}}
 
 \end{question}
 
