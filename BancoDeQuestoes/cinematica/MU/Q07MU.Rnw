@@ -1,0 +1,68 @@
+<<echo=FALSE, results=hide>>=
+
+# Marcelo C.
+
+tmin <- sample(seq(from=20,to=55,by=1),1)
+v2 <- sample(seq(from=80,to=100,by=1),1)
+
+resp1 <- round(350/(3+tmin/60),1)
+resp2 <- 45/v2*60 #minutos
+resp3 <- round((resp2-trunc(resp2))*60,0) #segundos
+resp2 <- trunc(resp2)
+
+questions <- solutions <- rep("", 3)
+type <- rep(c("schoice"), 3)
+
+questions[1] <- ""
+solutions[1] <- resp1
+type[1] <- "num"
+
+questions[2] <- ""
+solutions[2] <- resp2
+type[2] <- "num"
+
+questions[3] <- ""
+solutions[3] <- resp3
+type[3] <- "num"
+
+
+@
+
+\begin{question}
+
+(FUVEST-adaptada) Um \^onibus sai de S\~ao Paulo \`as 8 h e chega a Jaboticabal, que dista 350 km da capital, as 11 h$\Sexpr{tmin}$ min. No trecho de Jundia\'i a Campinas, de aproximadamente 45 km, a sua velocidade foi constante e igual a \Sexpr{v2} km/h
+
+Qual \'e a velocidade m\'edia, em km/h no trajeto S\~ao Paulo-Jaboticabal? 
+
+##ANSWER1##
+
+Em quanto tempo (em minutos e segundos) o \^onibus cumpre o trecho Jundia\'i-Campinas? Escreva separado nas caixas a seguir. \textbf{OBS}: \textit{Caso necessário, arredonde a quantidade de segundos para um número inteiro.}
+
+  \begin{tabular}{l|c|c|}
+    \hline
+    ##ANSWER2## & minutos & ##ANSWER3##  segundos \\
+    \hline
+  \end{tabular}
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@ 
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}:
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(paste(solutions, ".", sep = ""))
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{cloze}
+%% \exsolution{\Sexpr{paste(solutions, collapse = "|")}}
+%% \exclozetype{\Sexpr{paste(type, collapse = "|")}}
+%% \exname{Q07MU}
+%% \extol{0.1|0.1|2}
+
