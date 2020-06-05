@@ -18,6 +18,27 @@ exams2moodle(myexam, n = 20, rule="none",
              dir = "./Moodle",
              edir = "./BancoDeQuestoes/nc_og")
 
+################## vm ####################
+## Definindo a pasta com as questoes do exame
+myexam <- dir("./BancoDeQuestoes/cinematica/vm", pattern = ".rnw", ignore.case=TRUE)
+ano <- 12020
+## Cria o arquivo .xml para entrada no moodle
+set.seed(ano)
+exams2moodle(myexam, n = 5, rule="none", schoice = list(shuffle = TRUE), name = paste0("vm-",ano),
+             encoding = "UTF-8",
+             dir = "./Moodle",
+             edir = "./BancoDeQuestoes/cinematica/vm")
+
+################## MU ####################
+## Definindo a pasta com as questoes do exame
+myexam <- dir("./BancoDeQuestoes/cinematica/MU", pattern = ".rnw", ignore.case=TRUE)
+ano <- 12019
+## Cria o arquivo .xml para entrada no moodle
+set.seed(ano)
+exams2moodle(myexam, n = 50, rule="none", schoice = list(shuffle = TRUE), name = paste0("MU-",ano),
+             encoding = "UTF-8",
+             dir = "./Moodle",
+             edir = "./BancoDeQuestoes/cinematica/MU")
 
 ############### aceleracao ##################
 ## Definindo a pasta com as questoes do exame
@@ -283,17 +304,6 @@ exams2moodle(myexam, n = 100, rule="none", schoice = list(shuffle = TRUE), name 
              encoding = "UTF-8",
              dir = "./Moodle",
              edir = "./BancoDeQuestoes/trabalhopotencia")
-
-################## MU ####################
-## Definindo a pasta com as questoes do exame
-myexam <- dir("./BancoDeQuestoes/cinematica/MU", pattern = ".rnw", ignore.case=TRUE)
-ano <- 12019
-## Cria o arquivo .xml para entrada no moodle
-set.seed(ano)
-exams2moodle(myexam, n = 50, rule="none", schoice = list(shuffle = TRUE), name = paste0("MU-",ano),
-             encoding = "UTF-8",
-             dir = "./Moodle",
-             edir = "./BancoDeQuestoes/cinematica/MU")
 
 ############### estatica do corpo extenso ##################
 ## Definindo a pasta com as questoes do exame
