@@ -6,6 +6,7 @@ time <- sample(seq(from=10,to=40,by=1), 1)
 
 ## Resposta
 result <- floor((speed*time*60)/lap)
+
 options(OutDec=",")
 @
 \usepackage[utf8]{inputenc}
@@ -22,7 +23,6 @@ Uma pessoa caminha numa pista de Cooper de $\Sexpr{lap}$ metros de comprimento, 
 <<echo=FALSE, results=hide>>=
 options(OutDec=".")
 @
-
 %% META-INFORMATION
 %% \extype{num}
 %% \exsolution{\Sexpr{result}}

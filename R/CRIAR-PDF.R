@@ -39,18 +39,6 @@ exams2pdf(myexam, n = 1,
           edir = paste0("./BancoDeQuestoes/",assunto),
           template = "plain8")
 
-################# NC OG ####################
-## Definindo a pasta com as questoes do exame
-assunto = "nc_og"
-myexam <- dir(paste0("./BancoDeQuestoes/",assunto), pattern = ".rnw", ignore.case=TRUE)
-## Gerando HTML com o arquivo da questao
-set.seed(12020)
-exams2pdf(myexam, n = 1,
-          name=assunto,
-          encoding = "UTF-8",
-          edir = paste0("./BancoDeQuestoes/",assunto),
-          template = "plain8")
-
 ################# Unidades e conversão ####################
 ## Definindo a pasta com as questoes do exame
 assunto = "unidadeseconv"
@@ -63,16 +51,39 @@ exams2pdf(myexam, n = 1,
           edir = paste0("./BancoDeQuestoes/",assunto),
           template = "plain8")
 
-############### aceleracao media ##################
+################## vm ####################
 ## Definindo a pasta com as questoes do exame
-assunto = "acel"
-myexam <- dir(paste0("./BancoDeQuestoes/",assunto), pattern = ".rnw", ignore.case=TRUE)
+assunto = "vm"
+myexam <- dir(paste0("./BancoDeQuestoes/cinematica/",assunto), pattern = ".rnw", ignore.case=TRUE)
+
 ## Gerando HTML com o arquivo da questao
 set.seed(12018)
 exams2pdf(myexam, n = 1,
+          encoding = "UTF-8",
+          edir = paste0("./BancoDeQuestoes/cinematica/",assunto),
+          template = "plain8")
+
+############### aceleracao media ##################
+## Definindo a pasta com as questoes do exame
+assunto = "acel"
+myexam <- dir(paste0("./BancoDeQuestoes/cinematica/",assunto), pattern = ".rnw", ignore.case=TRUE)
+## Gerando HTML com o arquivo da questao
+set.seed(22020)
+exams2pdf(myexam, n = 1,
           name=assunto,
           encoding = "UTF-8",
-          edir = paste0("./BancoDeQuestoes/",assunto),
+          edir = paste0("./BancoDeQuestoes/cinematica/",assunto),
+          template = "plain8")
+
+################## MU ####################
+## Definindo a pasta com as questoes do exame
+assunto = "MU"
+myexam <- dir(paste0("./BancoDeQuestoes/cinematica/",assunto), pattern = ".rnw", ignore.case=TRUE)
+## Gerando HTML com o arquivo da questao
+set.seed(22020)
+exams2pdf(myexam, n = 1,
+          encoding = "UTF-8",
+          edir = paste0("./BancoDeQuestoes/cinematica/",assunto),
           template = "plain8")
 
 ############### calorimetria ##################
@@ -343,17 +354,6 @@ exams2pdf(myexam, n = 1,
           name=assunto,
           encoding = "UTF-8",
           edir = paste0("./BancoDeQuestoes/",assunto),
-          template = "plain8")
-
-################## MU ####################
-## Definindo a pasta com as questoes do exame
-myexam <- dir("./BancoDeQuestoes/cinematica/MU", pattern = ".rnw", ignore.case=TRUE)
-
-## Gerando HTML com o arquivo da questao
-set.seed(12018)
-exams2pdf(myexam, n = 1,
-          encoding = "UTF-8",
-          edir = "./BancoDeQuestoes/cinematica/MU",
           template = "plain8")
 
 ################## estatica ####################

@@ -28,7 +28,7 @@ solutions <- logical(5)
 @
 \usepackage[utf8]{inputenc}
 \begin{question}
-Uma motocicleta com velocidade constante de \Sexpr{v1} m/s ultrapassa um trem de comprimento 100m e velocidade \Sexpr{v2} m/s. Qual é o tempo de duração da ultrapassagem? (OBS: arredonde a resposta para duas decimais.)
+Uma motocicleta com velocidade constante de \Sexpr{v1} m/s ultrapassa um trem de comprimento 100 m e velocidade \Sexpr{v2} m/s. Qual é o tempo de duração da ultrapassagem? (OBS: arredonde a resposta para duas decimais.)
 
 <<echo=FALSE, results=hide, results=tex>>=
 answerlist(questions)

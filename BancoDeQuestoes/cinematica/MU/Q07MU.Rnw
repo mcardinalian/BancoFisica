@@ -25,7 +25,7 @@ questions[3] <- ""
 solutions[3] <- resp3
 type[3] <- "num"
 
-
+options(OutDec=",")
 @
 
 \begin{question}
@@ -59,6 +59,9 @@ answerlist(paste(solutions, ".", sep = ""))
 
 \end{solution}
 
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
 %% META-INFORMATION
 %% \extype{cloze}
 %% \exsolution{\Sexpr{paste(solutions, collapse = "|")}}
