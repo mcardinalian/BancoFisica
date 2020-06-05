@@ -4,6 +4,7 @@
 dt <- sample(seq(from=5,to=59,by=1),1)
 
 resp <- round(10/(dt/60),1)
+options(OutDec=",")
 @
 
 \begin{question}
@@ -20,6 +21,9 @@ nos passos intermedi\'arios).
   
 \end{solution}
 
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
 %% META-INFORMATION
 %% \extype{num}
 %% \exsolution{\Sexpr{resp}}

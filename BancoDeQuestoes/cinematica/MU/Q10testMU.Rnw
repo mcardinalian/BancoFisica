@@ -10,15 +10,15 @@ solutions <- logical(5)
 explanations <- character(5)
 aleat = sample(1:5)
 
-  questions[aleat[1]] <- "pi.R/3v"
+  questions[aleat[1]] <- "$\\frac{\\pi R}{3v}$"
   solutions[aleat[1]] <- FALSE
-  questions[aleat[2]] <- "2.pi.R/3v"
+  questions[aleat[2]] <- "$\\frac{2\\pi R}{3v}$"
   solutions[aleat[2]] <- FALSE
-  questions[aleat[3]] <- "pi.R/v"
+  questions[aleat[3]] <- "$\\frac{\\pi R}{v}$"
   solutions[aleat[3]] <- TRUE
-  questions[aleat[4]] <- "2.pi.R/v"
+  questions[aleat[4]] <- "$\\frac{2\\pi R}{v}$"
   solutions[aleat[4]] <- FALSE
-  questions[aleat[5]] <- "3.pi.R/v"
+  questions[aleat[5]] <- "$\\frac{3\\pi R}{v}$"
   solutions[aleat[5]] <- FALSE
 
 explanations[1:5] <- " "
@@ -26,7 +26,7 @@ explanations[1:5] <- " "
 
 \begin{question}
 
-(Fuvest-SP) Dois carros percorrem uma pista circular, de raio R, no mesmo sentido, com velocidades de m\'odulos constantes e iguais a v e 3v. O tempo decorrido entre dois encontros sucessivos vale:
+(Fuvest-SP) Dois carros percorrem uma pista circular, de raio R, no mesmo sentido, com velocidades de módulos constantes e iguais a $v$ e $3v$. O tempo decorrido entre dois encontros sucessivos vale:
 
 <<echo=FALSE, results=hide, results=tex>>=
 answerlist(questions)
