@@ -7,10 +7,10 @@ solutions <- logical(5)
 explanations <- character(5)
 aleat = sample(1:5)
 
-  questions[aleat[1]] <- "Uma velocidade média de 30 m/s significa que a cada 30 segundos, um objeto se move 30 metros."
+  questions[aleat[1]] <- "Uma velocidade média de 30 m/s significa que a cada 30 segundos, um objeto se move, em média, 30 metros."
   solutions[aleat[1]] <- FALSE
   explanations[aleat[1]] <- "O objeto percorre 30 metros a cada 1 segundo"
-  questions[aleat[2]] <- "Uma velocidade média de 30 m/h significa que a cada 1 hora, um objeto se move 30 metros"
+  questions[aleat[2]] <- "Uma velocidade média de 30 m/h significa que a cada 1 hora, um objeto se move, em média, 30 metros"
   solutions[aleat[2]] <- TRUE
   explanations[aleat[2]] <- ""
   questions[aleat[3]] <- "Se um carro possui uma velocidade constante de 30 km/h, ele percorrerá 15 quilômetros em 30 minutos"
