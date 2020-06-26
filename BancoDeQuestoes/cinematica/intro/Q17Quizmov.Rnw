@@ -1,0 +1,66 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+#Conceptual questions: Steven Pollock
+
+## QUESTION/ANSWER GENERATION
+questions <- character(5)
+solutions <- logical(5)
+explanations <- character(5)
+
+  include_supplement("Q17Quizmov1.jpg")
+  include_supplement("Q17Quizmov2.jpg")
+
+  questions[1] <- "A"
+  solutions[1] <- FALSE
+  explanations[1] <- ""
+  questions[2] <- "B"
+  solutions[2] <- FALSE
+  explanations[2] <- ""
+  questions[3] <- "C"
+  solutions[3] <- FALSE
+  explanations[3] <- ""
+  questions[4] <- "D"
+  solutions[4] <- TRUE
+  explanations[4] <- ""
+  questions[5] <- "Nenhum dos gráficos exibidos"
+  solutions[5] <- FALSE
+  explanations[5] <- ""
+  
+@
+
+\begin{question}
+
+Uma pessoa, inicialmente no ponto 3 no eixo x, permanece lá por um tempo, depois caminha ao longo do eixo x até o ponto 1, fica lá um pouco, depois corre para o ponto 2 e permanece lá.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[height=2cm,keepaspectratio]{Q17Quizmov1.jpg}
+\end{figure}
+
+Qual dos gráficos a seguir representa esse movimento?
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[height=5cm,keepaspectratio]{Q17Quizmov2.jpg}
+\end{figure}
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions, "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations)
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{schoice}
+%% \exsolution{\Sexpr{mchoice2string(solutions, single = TRUE)}}
+%% \exname{Q11Quizmov}
+%% \exusepackage[utf8]{inputenc}
+

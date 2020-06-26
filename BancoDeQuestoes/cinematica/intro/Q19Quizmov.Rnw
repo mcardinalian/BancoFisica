@@ -1,0 +1,59 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+#Conceptual questions: Steven Pollock
+
+## QUESTION/ANSWER GENERATION
+questions <- character(5)
+solutions <- logical(5)
+explanations <- character(5)
+aleat = sample(1:4)
+
+  include_supplement("Q19Quizmov.jpg")
+
+  questions[aleat[1]] <- "$V_1 < V_2 < V_3$"
+  solutions[aleat[1]] <- FALSE
+  explanations[aleat[1]] <- ""
+  questions[aleat[2]] <- "$V_2 < V_1 < V_3$"
+  solutions[aleat[2]] <- FALSE
+  explanations[aleat[2]] <- ""
+  questions[aleat[3]] <- "$V_3 < V_1 < V_2$"
+  solutions[aleat[3]] <- FALSE
+  explanations[aleat[3]] <- ""
+  questions[aleat[4]] <- "$V_3 < V_2 < V_1$"
+  solutions[aleat[4]] <- TRUE
+  explanations[aleat[4]] <- ""
+  questions[5] <- "Nenhuma das opções."
+  solutions[5] <- FALSE
+  explanations[5] <- ""
+  
+@
+
+\begin{question}
+
+Ordene o módulo das velocidades nos instantes 1, 2 e 3 segundos do mais lento ao mais rápido.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[height=4cm,keepaspectratio]{Q19Quizmov.jpg}
+\end{figure}
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions, "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations)
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{schoice}
+%% \exsolution{\Sexpr{mchoice2string(solutions, single = TRUE)}}
+%% \exname{Q16Quizmov}
+%% \exusepackage[utf8]{inputenc}
+

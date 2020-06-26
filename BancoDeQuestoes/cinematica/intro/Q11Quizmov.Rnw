@@ -1,0 +1,59 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+#Conceptual questions: Steven Pollock
+
+## QUESTION/ANSWER GENERATION
+questions <- character(5)
+solutions <- logical(5)
+explanations <- character(5)
+aleat = sample(1:4)
+
+  questions[aleat[1]] <- "+40 e + 40 dm"
+  solutions[aleat[1]] <- FALSE
+  explanations[aleat[1]] <- "Lembre-se que distância percorrida é a soma dos deslocamentos parciais em módulo."
+  questions[aleat[2]] <- "+60 e + 40 dm"
+  solutions[aleat[2]] <- TRUE
+  explanations[aleat[2]] <- ""
+  questions[aleat[3]] <- "+40 e + 60 dm"
+  solutions[aleat[3]] <- FALSE
+  explanations[aleat[3]] <- "Lembre-se que distância percorrida é a soma dos deslocamentos parciais em módulo."
+  questions[aleat[4]] <- "+60 e + 60 dm"
+  solutions[aleat[4]] <- FALSE
+  explanations[aleat[4]] <- "Lembre-se que distância percorrida é a soma dos deslocamentos parciais em módulo."
+  questions[5] <- "Nenhuma das opções acima."
+  solutions[5] <- FALSE
+  explanations[5] <- "Lembre-se que distância percorrida é a soma dos deslocamentos parciais em módulo."
+  
+  include_supplement("Q11Quizmov.jpg")
+@
+
+\begin{question}
+
+Marcelo está andando de um lado para o outro na palestra. Ele começa em
+x = + 10 (medido em dm da borda do banco), move-se para a direita para x = + 30, move-se para a esquerda para +20 e, finalmente, move-se para a direita para +50, como mostrado na figura. Qual é a distância percorrida e o deslocamento, respectivamente? 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[height=4cm,keepaspectratio]{Q11Quizmov.jpg}
+\end{figure}
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions, "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations)
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{schoice}
+%% \exsolution{\Sexpr{mchoice2string(solutions, single = TRUE)}}
+%% \exname{Q11Quizmov}
+%% \exusepackage[utf8]{inputenc}
+

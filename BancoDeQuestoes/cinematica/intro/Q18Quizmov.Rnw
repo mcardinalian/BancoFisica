@@ -1,0 +1,66 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+#Conceptual questions: Steven Pollock
+
+## QUESTION/ANSWER GENERATION
+questions <- character(5)
+solutions <- logical(5)
+explanations <- character(5)
+
+  include_supplement("Q18Quizmov1.jpg")
+  include_supplement("Q18Quizmov2.jpg")
+
+  questions[1] <- "A"
+  solutions[1] <- TRUE
+  explanations[1] <- ""
+  questions[2] <- "B"
+  solutions[2] <- FALSE
+  explanations[2] <- ""
+  questions[3] <- "C"
+  solutions[3] <- FALSE
+  explanations[3] <- ""
+  questions[4] <- "D"
+  solutions[4] <- FALSE
+  explanations[4] <- ""
+  questions[5] <- "Nenhum dos gráficos exibidos"
+  solutions[5] <- FALSE
+  explanations[5] <- ""
+  
+@
+
+\begin{question}
+
+A "fotografia estobroscópica" abaixo mostra uma bola rolando ao longo de uma superfície. A câmera piscou uma vez por segundo e o tempo é mostrado acima de cada imagem
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[height=2cm,keepaspectratio]{Q18Quizmov1.jpg}
+\end{figure}
+
+Qual gráfico abaixo representa melhor a velocidade da bola em função do tempo?
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[height=6cm,keepaspectratio]{Q18Quizmov2.jpg}
+\end{figure}
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions, "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations)
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{schoice}
+%% \exsolution{\Sexpr{mchoice2string(solutions, single = TRUE)}}
+%% \exname{Q16Quizmov}
+%% \exusepackage[utf8]{inputenc}
+

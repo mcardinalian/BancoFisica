@@ -1,0 +1,50 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+#Conceptual questions: Steven Pollock
+
+## QUESTION/ANSWER GENERATION
+questions <- character(4)
+solutions <- logical(4)
+explanations <- character(4)
+aleat = sample(1:4)
+
+  questions[aleat[1]] <- "Maior ou igual à distância percorrida"
+  solutions[aleat[1]] <- FALSE
+  explanations[aleat[1]] <- "Lembre-se que distância percorrida é a soma dos deslocamentos parciais em módulo."
+  questions[aleat[2]] <- "Sempre igual à distância percorrida"
+  solutions[aleat[2]] <- FALSE
+  explanations[aleat[2]] <- "Lembre-se que distância percorrida é a soma dos deslocamentos parciais em módulo."
+  questions[aleat[3]] <- "Menor ou igual à distância percorrida"
+  solutions[aleat[3]] <- TRUE
+  explanations[aleat[3]] <- "Lembre-se que distância percorrida é a soma dos deslocamentos parciais em módulo."
+  questions[aleat[4]] <- "Pode ser maior ou menor que a distância percorrida"
+  solutions[aleat[4]] <- FALSE
+  explanations[aleat[4]] <- "Lembre-se que distância percorrida é a soma dos deslocamentos parciais em módulo."
+
+  
+@
+
+\begin{question}
+
+Um objeto vai de um ponto para outro no espaço. Depois de chegar ao seu destino, o tamanho do seu deslocamento é:
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions, "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations)
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{schoice}
+%% \exsolution{\Sexpr{mchoice2string(solutions, single = TRUE)}}
+%% \exname{Q11Quizmov}
+%% \exusepackage[utf8]{inputenc}
+
