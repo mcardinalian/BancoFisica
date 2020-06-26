@@ -1,0 +1,39 @@
+<<echo=FALSE, results=hide>>=
+#MarceloC.
+
+nm <- sample(seq(from=2.00,to=5.00,by=0.01),1)
+nc <- sample(seq(from=31,to=142,by=1),1)
+np <- sample(seq(from=11,to=54,by=1),1)
+nk <- sample(seq(from=0.204,to=0.515,by=0.001),1)
+
+resp=round(nm+nc/100+np*2.54/100+nk*1000,digits=2)
+
+options(OutDec=",")
+@
+
+\begin{question}
+
+Determine o resultado da operação a seguir em termos da unidade fundamental do SI: 
+
+\Sexpr{nm} $m$ + \Sexpr{nc} $cm$ + \Sexpr{np} pol + \Sexpr{nk} km
+
+Dado: $1$ $pol = 2,54$ $cm$
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}
+  
+  \Sexpr{resp} m
+
+\end{solution}
+
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
+
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q03conv}
+%% \extol{0.01}

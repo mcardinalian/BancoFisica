@@ -7,7 +7,7 @@ library(exams)
 assunto = "nc_og"
 myexam <- dir(paste0("./BancoDeQuestoes/",assunto), pattern = ".rnw", ignore.case=TRUE)
 ## Gerando HTML com o arquivo da questao
-set.seed(22018)
+set.seed(22020)
 exams2pdf(myexam, n = 1,
           name=assunto,
           encoding = "UTF-8",
@@ -27,16 +27,16 @@ exams2pdf(myexam, n = 1,
           edir = paste0("./BancoDeQuestoes/",assunto),
           template = "plain8")
 
-################# Introdução da Física ####################
+################# Cinemática - Intro ####################
 ## Definindo a pasta com as questoes do exame
-assunto = "introfisica"
-myexam <- dir(paste0("./BancoDeQuestoes/",assunto), pattern = ".rnw", ignore.case=TRUE)
+assunto = "intro"
+myexam <- dir(paste0("./BancoDeQuestoes/cinematica/",assunto), pattern = ".rnw", ignore.case=TRUE)
 ## Gerando HTML com o arquivo da questao
 set.seed(12020)
 exams2pdf(myexam, n = 1,
           name=assunto,
           encoding = "UTF-8",
-          edir = paste0("./BancoDeQuestoes/",assunto),
+          edir = paste0("./BancoDeQuestoes/cinematica/",assunto),
           template = "plain8")
 
 ################# Unidades e conversão ####################
@@ -53,7 +53,7 @@ exams2pdf(myexam, n = 1,
 
 ################## vm ####################
 ## Definindo a pasta com as questoes do exame
-assunto = "vm"
+assunto = "intro"
 myexam <- dir(paste0("./BancoDeQuestoes/cinematica/",assunto), pattern = ".rnw", ignore.case=TRUE)
 
 ## Gerando HTML com o arquivo da questao

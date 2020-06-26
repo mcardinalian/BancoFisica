@@ -1,0 +1,60 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+
+## QUESTION/ANSWER GENERATION
+questions <- character(13)
+solutions <- logical(13)
+explanations <- character(13)
+aleat = sample(1:13)
+
+  questions[aleat[1]] <- "pressão"
+  solutions[aleat[1]] <- TRUE
+  questions[aleat[2]] <- "deslocamento"
+  solutions[aleat[2]] <- FALSE
+  questions[aleat[3]] <- "distância percorrida"
+  solutions[aleat[3]] <- TRUE
+  questions[aleat[4]] <- "massa"
+  solutions[aleat[4]] <- TRUE
+  questions[aleat[5]] <- "tempo"
+  solutions[aleat[5]] <- TRUE
+  questions[aleat[6]] <- "quantidade de matéria"
+  solutions[aleat[6]] <- TRUE
+  questions[aleat[7]] <- "força"
+  solutions[aleat[7]] <- FALSE
+  questions[aleat[8]] <- "velocidade"
+  solutions[aleat[8]] <- FALSE
+  questions[aleat[9]] <- "temperatura"
+  solutions[aleat[9]] <- TRUE
+  questions[aleat[10]] <- "potência"
+  solutions[aleat[10]] <- TRUE
+  questions[aleat[11]] <- "energia"
+  solutions[aleat[11]] <- TRUE
+  questions[aleat[12]] <- "aceleração"
+  solutions[aleat[12]] <- FALSE
+  questions[aleat[13]] <- "corrente elétrica"
+  solutions[aleat[13]] <- TRUE
+@
+
+\begin{question}
+
+Das grandezas físicas citadas nas opções abaixo, assinale apenas a(s) que é (são) de natureza escalar:
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions[1:7])
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions[1:7], "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations[1:7])
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{mchoice}
+%% \exsolution{\Sexpr{mchoice2string(solutions[1:7])}}
+%% \exname{Q07QuizGF}
+

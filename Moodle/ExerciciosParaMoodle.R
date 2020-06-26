@@ -4,13 +4,27 @@
 library(tools)
 library(exams)
 
+###################Unidades e conversão######################
+## Definindo a pasta com as questoes do exame
+myexam <- dir("./BancoDeQuestoes/unidadeseconv", pattern = ".rnw", ignore.case=TRUE)
+ano <- 12020
+## Cria o arquivo .xml para entrada no moodle
+set.seed(ano)
+exams2moodle(myexam, n = 80, rule="none", 
+             schoice = list(shuffle = TRUE), 
+             converter = "pandoc-mathjax",
+             name = paste0("unidadeseconv-",ano),
+             encoding = "UTF-8",
+             dir = "./Moodle",
+             edir = "./BancoDeQuestoes/unidadeseconv")
+
 ########Notacao cientifica e ordem de grandeza##################
 ## Definindo a pasta com as questoes do exame
 myexam <- dir("./BancoDeQuestoes/nc_og", pattern = ".rnw", ignore.case=TRUE)
 ano <- 12020
 ## Cria o arquivo .xml para entrada no moodle
 set.seed(ano)
-exams2moodle(myexam, n = 20, rule="none", 
+exams2moodle(myexam, n = 80, rule="none", 
              schoice = list(shuffle = TRUE), 
              converter = "pandoc-mathjax",
              name = paste0("nc_og-",ano),
@@ -18,16 +32,17 @@ exams2moodle(myexam, n = 20, rule="none",
              dir = "./Moodle",
              edir = "./BancoDeQuestoes/nc_og")
 
-################## vm ####################
+############Cinematica introducao ####################
 ## Definindo a pasta com as questoes do exame
-myexam <- dir("./BancoDeQuestoes/cinematica/vm", pattern = ".rnw", ignore.case=TRUE)
+myexam <- dir("./BancoDeQuestoes/cinematica/intro", pattern = ".rnw", ignore.case=TRUE)
 ano <- 12020
 ## Cria o arquivo .xml para entrada no moodle
 set.seed(ano)
-exams2moodle(myexam, n = 5, rule="none", schoice = list(shuffle = TRUE), name = paste0("vm-",ano),
+exams2moodle(myexam, n = 80, rule="none", schoice = list(shuffle = TRUE), name = paste0("cinematica_intro",ano),
+             converter = "pandoc-mathjax",
              encoding = "UTF-8",
              dir = "./Moodle",
-             edir = "./BancoDeQuestoes/cinematica/vm")
+             edir = "./BancoDeQuestoes/cinematica/intro")
 
 ################## MU ####################
 ## Definindo a pasta com as questoes do exame
@@ -229,14 +244,14 @@ exams2moodle(myexam, n = 100, rule="none", schoice = list(shuffle = TRUE), name 
 
 ############### movimento circular ##################
 ## Definindo a pasta com as questoes do exame
-myexam <- dir("./BancoDeQuestoes/movcircular", pattern = ".rnw", ignore.case=TRUE)
+myexam <- dir("./BancoDeQuestoes/cinematica/MCU", pattern = ".rnw", ignore.case=TRUE)
 ano <- 12018
 ## Cria o arquivo .xml para entrada no moodle
 set.seed(ano)
-exams2moodle(myexam, n = 100, rule="none", schoice = list(shuffle = TRUE), name = paste0("movcircular-",ano),
+exams2moodle(myexam, n = 5, rule="none", schoice = list(shuffle = TRUE), name = paste0("MCU-",ano),
              encoding = "UTF-8",
              dir = "./Moodle",
-             edir = "./BancoDeQuestoes/movcircular")
+             edir = "./BancoDeQuestoes/cinematica/MCU")
 
 ############### MRU ##################
 ## Definindo a pasta com as questoes do exame
