@@ -1,0 +1,56 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+
+## QUESTION/ANSWER GENERATION
+questions <- character(11)
+solutions <- logical(11)
+explanations <- character(11)
+aleat = sample(1:11)
+
+  questions[aleat[1]] <- "candela"
+  solutions[aleat[1]] <- TRUE
+  questions[aleat[2]] <- "s"
+  solutions[aleat[2]] <- TRUE
+  questions[aleat[3]] <- "m"
+  solutions[aleat[3]] <- TRUE
+  questions[aleat[4]] <- "kg"
+  solutions[aleat[4]] <- TRUE
+  questions[aleat[5]] <- "hora"
+  solutions[aleat[5]] <- FALSE
+  questions[aleat[6]] <- "mol"
+  solutions[aleat[6]] <- TRUE
+  questions[aleat[7]] <- "ampére"
+  solutions[aleat[7]] <- TRUE
+  questions[aleat[8]] <- "newton"
+  solutions[aleat[8]] <- FALSE
+  questions[aleat[9]] <- "°c"
+  solutions[aleat[9]] <- FALSE
+  questions[aleat[10]] <- "kelvin"
+  solutions[aleat[10]] <- TRUE
+  questions[aleat[11]] <- "watts"
+  solutions[aleat[11]] <- FALSE
+@
+
+\begin{question}
+
+Assinale a(s) alternativa(s) que contém apenas unidades básicas ou fundamentais do SI:
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions[1:5])
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions[1:5], "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations[1:5])
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{mchoice}
+%% \exsolution{\Sexpr{mchoice2string(solutions[1:5])}}
+%% \exname{Q02QuizSI}
+

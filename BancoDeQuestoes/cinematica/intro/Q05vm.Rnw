@@ -1,0 +1,59 @@
+<<echo=FALSE, results=hide>>=
+#Carlos Santana; vinibrenobr11; MarceloC.
+
+df <- sample(seq(from=160,to=300,by=20),1)
+d1 <- sample(seq(from=df-20,to=df-10,by=2),1)
+d2 <- df-d1
+v1 <- sample(seq(from=90,to=120,by=2),1)
+v2 <- sample(seq(from=40,to=60,by=2),1)
+
+resp <- (d1/v1)+(d2/v2)
+resp1 <- resp
+
+questions <- solutions <- rep("", 3)
+type <- rep(c("num"), 3)
+
+solutions[1] <- floor(resp)
+
+solutions[2] <- floor((resp - floor(resp)) * 60)
+
+resp <- (resp - floor(resp)) * 60
+
+solutions[3] <- round((resp - floor(resp)) * 60)
+
+options(OutDec=",")
+@
+
+\begin{question}
+
+(ENEM-adaptado) Um autom\'ovel percorre uma estrada de $\Sexpr{df}$ km que liga duas cidades. Nos $\Sexpr{d1}$ km iniciais, devido \`as boas condi\c{c}\~oes da estrada, o motorista desenvolve uma velocidade escalar m\'edia de $\Sexpr{v1}$ km/h, mas nos $\Sexpr{d2}$ km restantes, devido \`a eros\~ao provocada pelas chuvas, s\'o consegue manter a velocidade escalar m\'edia de $\Sexpr{v2}$ km/h. Determine o tempo gasto (em horas, minutos e segundos) no percurso entre as duas cidades. 
+
+##ANSWER1## hora(s) ##ANSWER2## minuto(s) ##ANSWER3## segundo(s)
+
+<<echo=FALSE, results=tex>>=
+answerlist(rep("", 3))
+@
+
+\end{question}
+
+\begin{solution}
+  
+O tempo gasto é de \Sexpr{solutions[1]} hora(s) \Sexpr{solutions[2]} minuto(s) e \Sexpr{solutions[3]} segundo(s). 
+  
+<<echo=FALSE, results=tex>>=
+answerlist(solutions)
+@
+
+\end{solution}
+
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
+
+%% META-INFORMATION
+%% \extype{cloze}
+%% \exsolution{\Sexpr{paste(solutions, collapse = "|")}}
+%% \exclozetype{num|num|num}
+%% \exname{Q05vm}
+%% \extol{0|0|2}
+%% \exextra[numwidth,logical]{TRUE}

@@ -1,0 +1,58 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+#Conceptual questions: Steven Pollock
+
+## QUESTION/ANSWER GENERATION
+questions <- character(5)
+solutions <- logical(5)
+explanations <- character(5)
+aleat = sample(1:4)
+
+  questions[aleat[1]] <- "25 km/h"
+  solutions[aleat[1]] <- FALSE
+  explanations[aleat[1]] <- "Lembre-se que a velocidade média é definida como deslocamento em função do tempo"
+  questions[aleat[2]] <- "67 km/h"
+  solutions[aleat[2]] <- FALSE
+  explanations[aleat[2]] <- "Lembre-se que a velocidade média é definida como deslocamento em função do tempo"
+  questions[aleat[3]] <- "40 km/h"
+  solutions[aleat[3]] <- FALSE
+  explanations[aleat[3]] <- "Lembre-se que a velocidade média é definida como deslocamento em função do tempo"
+  questions[aleat[4]] <- "75 km/h"
+  solutions[aleat[4]] <- FALSE
+  explanations[aleat[4]] <- "Lembre-se que a velocidade média é definida como deslocamento em função do tempo"
+  questions[5] <- "Nenhuma das opções"
+  solutions[5] <- TRUE
+  explanations[5] <- "Como o deslocamento é nulo, a velocidade média é nula!"
+  
+  include_supplement("Q15Quizmov.jpg")
+@
+
+\begin{question}
+
+Uma pessoa começa em Hortolândia, dirige para Piracicaba (50 km) em 1 hora, permanece por lá durante 1 hora e depois volta para Hortolândia em 30 minutos. Qual é a velocidade média da ida e volta?
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[height=3cm,keepaspectratio]{Q15Quizmov.jpg}
+\end{figure}
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions, "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations)
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{schoice}
+%% \exsolution{\Sexpr{mchoice2string(solutions, single = TRUE)}}
+%% \exname{Q13Quizmov}
+%% \exusepackage[utf8]{inputenc}
+

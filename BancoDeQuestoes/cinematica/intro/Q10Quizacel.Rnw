@@ -1,0 +1,50 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+
+## QUESTION/ANSWER GENERATION
+questions <- character(5)
+solutions <- logical(5)
+explanations <- character(5)
+aleat = sample(1:5)
+
+  questions[aleat[1]] <- "Aceleração é a alteração da velocidade devido à variação  da rapidez e/ou da orientação."
+  solutions[aleat[1]] <- TRUE
+  explanations[aleat[1]] <- ""
+  questions[aleat[2]] <- "Uma aceleração de 5 $m/s^2$ corresponde à uma variação na rapidez de 5 m/s a cada 1 segundo"
+  solutions[aleat[2]] <- TRUE
+  explanations[aleat[2]] <- ""
+  questions[aleat[3]] <- "Uma aceleração de 5 km/h/s significa que a cada 1 segundo, a rapidez do móvel varia de 5 km."
+  solutions[aleat[3]] <- FALSE
+  explanations[aleat[3]] <- ""
+  questions[aleat[4]] <- "Um carro partindo do repouso com aceleração de 20 km/h/s atinge uma velocidade de 50 km/h em 2,5 segundos."
+  solutions[aleat[4]] <- TRUE
+  explanations[aleat[4]] <- ""
+  questions[aleat[5]] <- "Se a aceleração da gravidade vale 10 $m/s^2$, uma pedra atirada para cima com velocidade de 10 m/s retorna à mesma altura inicial apos 4 segundos"
+  solutions[aleat[5]] <- FALSE
+  explanations[aleat[5]] <- "Retorna à mesma altura apos 2 segundos (1 segundo para subir e outro para descer)."
+@
+
+
+\begin{question}
+
+Acerca dos conceitos relacionados à aceleração, Assinale a(s) alternativa(s) correta(s):
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions)
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions, "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations)
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{mchoice}
+%% \exsolution{\Sexpr{mchoice2string(solutions)}}
+%% \exname{Q02quizAcel}
+

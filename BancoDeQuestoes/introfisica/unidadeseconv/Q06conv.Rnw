@@ -1,0 +1,81 @@
+<<echo=FALSE, results=hide>>=
+#Marcelo C.
+options(OutDec=",")
+
+na <- sample(seq(from=0.2,to=18.2,by=0.1),1)
+nb <- sample(seq(from=2.1,to=89.8,by=0.1),1)
+nc <- sample(seq(from=21,to=945,by=1),1)
+nd <- sample(seq(from=7.2,to=108,by=0.9),1)
+ne <- sample(seq(from=9000,to=12000,by=50),1)
+nf <- sample(seq(from=1.02,to=3.21,by=0.01),1)
+ng <- sample(seq(from=20,to=150,by=0.1),1)
+
+respa <- na*3600
+respb <- nb/100
+respc <- nc/1000
+respd <- nd/3.6
+respe <- round(ne/60000,4)
+respf <- nf*1000
+respg <- round(ng/3.6,4)
+@
+\begin{question}
+
+Converta as grandezas abaixo em termos das unidades básicas de medida do SI (insira apenas o resultado numérico):
+  
+\begin{answerlist}
+
+  \item \Sexpr{na} $horas$ $\rightarrow$ $s$: 
+
+  \item \Sexpr{nb} $cm$ $\rightarrow$ $m$: 
+
+  \item \Sexpr{nc} $g$ $\rightarrow$ $kg$: 
+
+  \item \Sexpr{nd} $km/h$ $\rightarrow$ $m/s$: 
+  
+  \item \Sexpr{ne} $g/min$ $\rightarrow$ $kg/s$: 
+  
+  \item \Sexpr{nf} $g/cm^3$ $\rightarrow$ $kg/m^3$:
+
+  \item \Sexpr{ng} $\frac{g.km^2}{min^2}$ $\rightarrow$ $\frac{kg.m^2}{s^2}$:
+
+\end{answerlist}
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}:
+  
+  \begin{answerlist}
+    \item
+      \Sexpr{respa} $s$
+
+    \item
+      \Sexpr{respb} $m$
+
+    \item
+      \Sexpr{respc} $kg$
+        
+    \item
+      \Sexpr{respd} $m/s$
+      
+    \item
+      \Sexpr{respe} $kg/s$
+    
+    \item
+      \Sexpr{respf} $kg/m^3$
+      
+    \item
+      \Sexpr{respg} $kg.m^2/s^2$  
+  \end{answerlist}
+\end{solution}
+
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
+
+%% META-INFORMATION
+%% \extype{cloze}
+%% \exclozetype{num|num|num|num|num|num|num}
+%% \exsolution{\Sexpr{respa}|\Sexpr{respb}|\Sexpr{respc}|\Sexpr{respd}|\Sexpr{respe}|\Sexpr{respf}|\Sexpr{respg}}
+%% \exname{Q06conv}
+%% \extol{0.1|0.001|0.001|0.01|0.0001|1|0.1}
