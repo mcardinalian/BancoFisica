@@ -4,7 +4,7 @@
 
 ## Introdução
 
-Este é o repositório oficial do banco de questões de Física produzido pelos professores do IFSP - Câmpus Hortolândia. Todas as questões devem ser programadas utilizando o pacote [exams](http://www.r-exams.org/) do R. Nas próximas seções do documento podem ser encontradas instruções de como contribuir com o repositório.
+Este repositório contem o banco de questões de Física produzido pelos professores do IFSP - Câmpus Hortolândia. Todas as questões foram programadas utilizando o pacote [exams](http://www.r-exams.org/) do R.
 
 A seguir você encontra a documentação de como utilizar questões prontas na plataforma Moodle e como contribuir para o projeto.
 
