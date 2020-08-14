@@ -25,5 +25,5 @@ Determine o módulo da aceleração em $m/s^2$.
 %% \extype{num}
 %% \exsolution{\Sexpr{resp}}
 %% \exname{Q01Acel.Rnw}
-%% \extol{0.1}
+%% \extol{0.2}
 

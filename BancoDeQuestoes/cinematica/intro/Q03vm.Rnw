@@ -30,4 +30,4 @@ options(OutDec=".")
 %% \extype{num}
 %% \exsolution{\Sexpr{resp}}
 %% \exname{Q03Velm}
-%% \extol{0.02}
+%% \extol{0.1}

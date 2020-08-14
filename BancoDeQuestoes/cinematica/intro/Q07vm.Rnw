@@ -55,4 +55,4 @@ options(OutDec=".")
 %% \exsolution{\Sexpr{paste(solutions, collapse = "|")}}
 %% \exclozetype{num|num|num}
 %% \exname{Q07vm}
-%% \extol{0.1|0|1}
+%% \extol{1|0|3}

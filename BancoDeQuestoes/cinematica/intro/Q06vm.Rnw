@@ -51,4 +51,4 @@ options(OutDec=".")
 %% \exclozetype{num|num}
 %% \exsolution{\Sexpr{result_a}|\Sexpr{result_b}}
 %% \exname{Q06vm}
-%% \extol{0.02}
+%% \extol{0.2|0.2}
