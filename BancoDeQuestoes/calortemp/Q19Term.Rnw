@@ -12,7 +12,7 @@ resp <- round((tk-273)*(te-tf)/100+tf,digits=1)
 \begin{question}
 
 (UPE) Construiu-se um termômetro X, com ponto de fusão do gelo \Sexpr{tf} $^\circ X$ e ponto de ebulição da água \Sexpr{te} $^\circ X$. Qual leitura se teria para a temperatura de \Sexpr{tk} K?
-\textit{Caso necessário, arredonde sua resposta para uma casa decimal}
+\textit{Digite sua resposta sem a unidade de medida}
 \end{question}
 
 %% SOLUTION
@@ -38,4 +38,4 @@ options(OutDec=".")
 %% \extype{num}
 %% \exsolution{\Sexpr{resp}}
 %% \exname{Q19Term}
-%% \extol{0.1}
+%% \extol{0.5}

@@ -11,7 +11,7 @@ kelvin_temp <- celsius_temp + 273
 
 \begin{question}
 
-Dois termômetros, um graduado na escala Kelvin e o outro graduado na escala Celsius, estão mergulhados num líquido. O segundo assinala \Sexpr{celsius_temp} $^\circ C$. Quanto assinala o primeiro?
+Dois termômetros, um graduado na escala Kelvin e o outro graduado na escala Celsius, estão mergulhados num líquido. O segundo assinala \Sexpr{celsius_temp} $^\circ C$. Quanto assinala o primeiro? 
   
 \end{question}
 
@@ -28,4 +28,4 @@ options(OutDec=".")
 %% \extype{num}
 %% \exsolution{\Sexpr{kelvin_temp}}
 %% \exname{Q12Term}
-%% \extol{0.1}
+%% \extol{0.3}

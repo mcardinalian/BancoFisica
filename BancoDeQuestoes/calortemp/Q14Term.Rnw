@@ -12,7 +12,7 @@ resp <- round(dif*1.8, digits = 1)
 
 \begin{question}
 
-A amplitude térmica é a diferença entre a máxima e a mínima temperatura de algum local e num determinado período de tempo. No Brasil, os estados do norte e nordeste geralmente apresentam uma amplitude térmica baixa. Isso porque os climas tropical e equatorial que atuam na região são caracterizados por altas temperaturas o ano todo. Já os estados do sudeste, sul e centro-oeste em algumas estações do ano apresentam uma amplitude térmica alta, sobretudo no inverno. Sabendo que, durante um dia, a temperatura máxima é de $\Sexpr{tempa}$ $^\circ$C e a mínima é de $\Sexpr{tempb}$ $^\circ$C, determine o valor da amplitude térmica na escala Fahrenheit?
+A amplitude térmica é a diferença entre a máxima e a mínima temperatura de algum local e num determinado período de tempo. No Brasil, os estados do norte e nordeste geralmente apresentam uma amplitude térmica baixa. Isso porque os climas tropical e equatorial que atuam na região são caracterizados por altas temperaturas o ano todo. Já os estados do sudeste, sul e centro-oeste em algumas estações do ano apresentam uma amplitude térmica alta, sobretudo no inverno. Sabendo que, durante um dia, a temperatura máxima é de $\Sexpr{tempa}$ $^\circ$C e a mínima é de $\Sexpr{tempb}$ $^\circ$C, determine o valor da amplitude térmica na escala Fahrenheit? \textit{Digite sua resposta sem a unidade de medida}
 
 \end{question}
 
@@ -39,4 +39,4 @@ options(OutDec=".")
 %% \extype{num}
 %% \exsolution{\Sexpr{resp}}
 %% \exname{Q14Term}
-%% \extol{0.1}
+%% \extol{0.1|0.1}

@@ -4,8 +4,8 @@
 options(OutDec=",")
 
 temp1 <- sample(seq(from=0.1,to=10,by=0.1),1)
-resp1 <- sample(temp1 - 273)
-resp2 <- round(5/9*((resp1) - 32), digits = 1)
+resp1 <- temp1 - 273
+resp2 <- round(1.8*resp1+32, 1)
 @
 \usepackage[utf8]{inputenc}
 
@@ -15,9 +15,9 @@ Um astrônomo analisa um buraco negro no espaço. Após muitos estudos ele chego
 
   \begin{answerlist}
 
-    \item Qual a temperatura do buraco negro na escala Celsius?
+    \item Qual a temperatura do buraco negro na escala Celsius? \textit{Digite sua resposta sem a unidade de medida}
   
-    \item E qual a temperatura do buraco negro na escala Fahrenheit?
+    \item E qual a temperatura do buraco negro na escala Fahrenheit? \textit{Digite sua resposta sem a unidade de medida}
 
   \end{answerlist}
 
@@ -45,4 +45,4 @@ options(OutDec=".")
 %% \exclozetype{num|num}
 %% \exsolution{\Sexpr{resp1}|\Sexpr{resp2}}
 %% \exname{Q17Term}
-%% \extol{0.01|0.01}
+%% \extol{0.2|0.5}

@@ -17,9 +17,9 @@ Um turista brasileiro sente-se mal durante uma viagem à Nova Iorque. Ao ser exa
 
 \begin{answerlist}
 
-  \item Qual era a sua temperatura anteriormente em $^\circ$ C?
+  \item Qual era a sua temperatura anteriormente em $^\circ$ C? \textit{Digite sua resposta sem a unidade de medida}
   
-  \item E qual sua temperatura atual em $^\circ$ C?
+  \item E qual sua temperatura atual em $^\circ$ C? \textit{Digite sua resposta sem a unidade de medida}
   
 \end{answerlist}
 
@@ -70,4 +70,4 @@ options(OutDec=".")
 %% \exclozetype{num|num}
 %% \exsolution{\Sexpr{resp1}|\Sexpr{resp2}}
 %% \exname{Q16Term}
-%% \extol{0.05|0.05}
+%% \extol{0.1|0.2}

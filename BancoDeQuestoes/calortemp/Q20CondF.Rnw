@@ -1,0 +1,41 @@
+<<echo=FALSE, results=hide>>=
+#Programado por: Marcelo C.
+options(OutDec=",")
+t1 <- sample(seq(from=1,to=20,by=1),1)
+t2 <- sample(seq(from=70,to=99,by=1),1)
+l <- sample(seq(from=20,to=40,by=1),1)
+A <- sample(seq(from=2,to=10,by=0.5),1)
+
+resp <- round(0.5*A*(t2-t1)/l,digits=1)
+@
+\usepackage[utf8]{inputenc}
+
+\begin{question}
+
+Uma barra de alumínio, de condutibilidade térmica de $0,50$ $\frac{cal}{cm ^\circ C}$, está em contato, numa extremidade, com um meio de temperatura de \Sexpr{t1} $^\circ C$ e, na outra, com um meio de temperatura de \Sexpr{t2} $^\circ C$. O comprimento da barra é de $\Sexpr{l}$ $cm$, e a secção transversal tem $\Sexpr{A}$ $cm^2$ de área. Determine o fluxo de calor, em cal/s, que atravessa a barra. \textit{Caso necessário, arredonde sua resposta para uma casa decimal}
+\end{question}
+
+%% SOLUTION
+\begin{solution}
+  
+Utilizando a Lei de condução de Fourier, temos:
+	
+	\begin{equation*}
+    \Phi = \frac{k.A.\Delta t}{l} = \frac{0.5 \cdot \Sexpr{A} \cdot (\Sexpr{t2}-\Sexpr{t1})}{\Sexpr{l}}
+	\end{equation*}
+
+Resolvendo a expressão, temos:
+
+  \begin{equation*}
+  \Phi = \Sexpr{resp} cal/s
+  \end{equation*}
+\end{solution}
+
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q20CondF}
+%% \extol{0.2}

@@ -18,9 +18,9 @@
   \\
   \begin{answerlist}
   
-  \item A variação de temperatura sofrida pela panela com água, na escala Fahrenheit, foi de:
-
-  \item A variação de temperatura sofrida pela panela com água, na escala kelvin, foi de:
+  \item A variação de temperatura sofrida pela panela com água, na escala Fahrenheit, foi de: (\textit{Digite sua resposta sem a unidade de medida})
+  
+  \item A variação de temperatura sofrida pela panela com água, na escala kelvin, foi de: (\textit{Digite sua resposta sem a unidade de medida})
   
   \end{answerlist}
   

@@ -12,9 +12,9 @@ resp2 <- 1.8*dtc
 Quando um termômetro na escala Celsius sofrer uma variação de $\Sexpr{dtc}$ graus em sua temperatura, qual será a correspondente variação de temperatura para:
 
 \begin{answerlist}
-\item Um termômetro graduado na escala Kelvin
+\item Um termômetro graduado na escala Kelvin. \textit{Digite sua resposta sem a unidade de medida}
 
-\item Um termômetro graduado na escala Fahrenheit.
+\item Um termômetro graduado na escala Fahrenheit. \textit{Digite sua resposta sem a unidade de medida}
 
 \end{answerlist}
 
@@ -42,4 +42,4 @@ options(OutDec=".")
 %% \exclozetype{num|num}
 %% \exsolution{\Sexpr{resp1}|\Sexpr{resp2}}
 %% \exname{Q13term}
-%% \extol{0.01}
+%% \extol{0.1}

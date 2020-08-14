@@ -16,9 +16,9 @@ Existe uma temperatura que tem o mesmo valor na escala Celsius e na escala Fahre
 
   \begin{answerlist}
 
-    \item Qual é essa temperatura?
+    \item Qual é essa temperatura? \textit{Digite sua resposta sem a unidade de medida}
   
-    \item E qual o valor dessa temperatura na escala Kelvin?
+    \item E qual o valor dessa temperatura na escala Kelvin? \textit{Digite sua resposta sem a unidade de medida}
   
   \end{answerlist}
 
@@ -46,4 +46,4 @@ options(OutDec=".")
 %% \exclozetype{num|num}
 %% \exsolution{\Sexpr{resp1}|\Sexpr{resp2}}
 %% \exname{Q18Term}
-%% \extol{0|0.1}
+%% \extol{0|0.2}
