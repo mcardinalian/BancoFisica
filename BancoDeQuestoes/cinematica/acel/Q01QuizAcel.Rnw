@@ -1,0 +1,65 @@
+<<echo=FALSE, results=hide>>=
+##PROGRAMADO POR: MARCELO C.
+
+## QUESTION/ANSWER GENERATION
+questions <- character(10)
+solutions <- logical(10)
+explanations <- character(10)
+aleat = sample(1:10)
+
+  questions[aleat[1]] <- "Aceleração é a alteração da velocidade devido à variação da rapidez e/ou da orientação."
+  solutions[aleat[1]] <- TRUE
+  explanations[aleat[1]] <- ""
+  questions[aleat[2]] <- "Uma aceleração de 5 $m/s^2$ corresponde à uma variação na rapidez de 5 m/s a cada 1 segundo"
+  solutions[aleat[2]] <- TRUE
+  explanations[aleat[2]] <- ""
+  questions[aleat[3]] <- "Uma aceleração de 5 km/h/s significa que a cada 1 segundo, a rapidez do móvel varia de 5 km."
+  solutions[aleat[3]] <- FALSE
+  explanations[aleat[3]] <- ""
+  questions[aleat[4]] <- "Um carro partindo do repouso com aceleração de 20 km/h/s atinge uma velocidade de 50 km/h em 2,5 segundos."
+  solutions[aleat[4]] <- TRUE
+  explanations[aleat[4]] <- ""
+  questions[aleat[5]] <- "Se a aceleração da gravidade vale 10 $m/s^2$, uma pedra atirada para cima com velocidade de 10 m/s retorna à mesma altura inicial após 4 segundos"
+  solutions[aleat[5]] <- FALSE
+  explanations[aleat[5]] <- "Retorna à mesma altura após 2 segundos (1 segundo para subir e outro para descer)."
+  questions[aleat[6]] <- "Um carro com velocidade inicial de 2 m/s, com aceleração constante de 3 $m/s^2$, terá velocidade de 8 m/s após 2 segundos."
+  solutions[aleat[6]] <- TRUE
+  explanations[aleat[6]] <- ""
+  questions[aleat[7]] <- "Em um movimento retilíneo, uma aceleração negativa implica que o móvel está desacelerando."
+  solutions[aleat[7]] <- FALSE
+  explanations[aleat[7]] <- ""
+  questions[aleat[8]] <- "Em um movimento retilíneo, um móvel com velocidade de 5 m/s e aceleração de -2 $m/s^2$ está em um movimento retardado"
+  solutions[aleat[8]] <- TRUE
+  explanations[aleat[8]] <- ""
+  questions[aleat[9]] <- "Em um movimento retilíneo, um móvel com velocidade de -5 m/s e aceleração de +2 $m/s^2$ está em um movimento acelerado."
+  solutions[aleat[9]] <- FALSE
+  explanations[aleat[9]] <- ""
+  questions[aleat[10]] <- "Em um movimento retilíneo, um móvel com velocidade de -60 km/h e aceleração de -10 km/h/s está em um movimento acelerado, no sentido contrário ao eixo adotado."
+  solutions[aleat[10]] <- TRUE
+  explanations[aleat[10]] <- ""
+@
+
+
+\begin{question}
+
+Acerca dos conceitos relacionados aos movimentos retilíneos e ao conceito de aceleração, Assinale a(s) alternativa(s) correta(s):
+
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(questions[1:5])
+@
+\end{question}
+
+\begin{solution}
+<<echo=FALSE, results=hide, results=tex>>=
+answerlist(
+  paste("\\textbf{", ifelse(solutions[1:5], "Verdadeiro", "Falso"), "}", sep = ""),
+  explanations[1:5])
+@
+
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{mchoice}
+%% \exsolution{\Sexpr{mchoice2string(solutions[1:5])}}
+%% \exname{Q02quizAcel}
+

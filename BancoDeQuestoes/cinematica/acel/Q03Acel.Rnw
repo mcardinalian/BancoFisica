@@ -1,0 +1,30 @@
+<<echo=FALSE, results=hide>>=
+##MARCELO C.
+options(OutDec=",")
+v <- sample(seq(from=45,to=108,by=4.5),1)
+t <- sample(seq(from=4,to=7,by=0.1),1)
+resp <- round(v/(3.6*t),1)
+@
+\usepackage[portuguese]{babel}
+\begin{question}
+  
+Um automóvel partiu acelerando e atingiu $\Sexpr{v}$ $km/h$ em $\Sexpr{t}$ segundos. Nesse percurso, qual foi o valor da aceleração escalar média do veículo em $m/s^2$? \textit{Arredonde sua resposta final para 1 decimal.}
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}:
+
+  \Sexpr{resp}
+  
+\end{solution}
+
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q03Acel.Rnw}
+%% \extol{0.2}
+

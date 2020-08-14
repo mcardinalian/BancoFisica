@@ -1,0 +1,29 @@
+<<echo=FALSE, results=hide>>=
+##MARCELO C.
+
+v <- sample(seq(from=36,to=120,by=4),1)
+
+resp <- round(v/(3.6*5),1)
+@
+\usepackage[portuguese]{babel}
+\begin{question}
+  
+Um automóvel está com velocidade de $\Sexpr{v}$ km/h quando é freado, mantendo-se em movimento retilíneo com aceleração constante até parar depois de 5 segundos do início da frenagem. 
+Determine o \textbf{módulo} da aceleração em $m/s^2$. 
+\textit{OBS1: Arredonde sua resposta final para 1 decimal. OBS2: Lembre-se que, em módulo, significa valor absoluto ou valor positivo.}
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}:
+
+  \Sexpr{resp}
+  
+\end{solution}
+
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q01Acel.Rnw}
+%% \extol{0.1}
+

@@ -1,0 +1,34 @@
+<<echo=FALSE, results=hide>>=
+##MARCELO C.
+options(OutDec=",")
+
+v0 <- sample(seq(from=5,to=10,by=0.5),1)
+v <- sample(seq(from=v0+5,to=30,by=0.5),1)
+a <- sample(seq(from=1,to=3,by=0.5),1)
+
+resp <- round((v-v0)/a,1)
+resp
+@
+\usepackage[portuguese]{babel}
+\begin{question}
+  
+Um corpo está em um movimento retilíneo. Em um determinado instante de tempo, o módulo da sua velocidade é de $\Sexpr{v0}$ $m/s$. Se o módulo da aceleração média desse corpo é de $\Sexpr{a}$ $m/s^2$, qual é o intervalo de tempo (em segundos) necessário para que o módulo da velocidade por ele atingida seja $\Sexpr{v}$ $m/s$? \textit{Arredonde sua resposta final para 1 decimal.}
+
+\end{question}
+
+%% SOLUTION
+\begin{solution}:
+
+  \Sexpr{resp}
+  
+\end{solution}
+
+<<echo=FALSE, results=hide>>=
+options(OutDec=".")
+@
+%% META-INFORMATION
+%% \extype{num}
+%% \exsolution{\Sexpr{resp}}
+%% \exname{Q03Acel.Rnw}
+%% \extol{0.1}
+

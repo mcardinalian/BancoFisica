@@ -1,0 +1,72 @@
+<<echo=FALSE, results=hide>>=
+##MARCELO C.
+
+tol <- 0.1
+questions <- solutions <- explanations <- rep(list(""), 4)
+type <- rep(list("schoice"), 4)
+sol <- logical(4)
+sol[3]=TRUE
+
+v0 <- sample(seq(from=1,to=2,by=1),1)
+a = v0
+
+respb <- a*3+v0
+respc <- 3/v0-1
+respd <- a
+
+questions[[1]] <- c("O corpo se desloca com velocidade constante até que pára no instante 3,0 segundos.", "O corpo parte do repouso no instante inicial e aumenta continuamente sua velocidade até o instante 5,0 segundos.", "O corpo aumenta sua velocidade até o instante 3,0 segundos, permanecendo com velocidade constante em seguida.","O corpo parte do repouso no instante inicial e aumenta sua velocidade até o instante 3,0 segundos, permanecendo com velocidade constante em seguida")
+
+solutions[[1]] <- explanations[[1]] <- c(sol)
+solutions[1] <- lapply(solutions[1], mchoice2string)
+
+questions[[2]] <- "Qual é o módulo da velocidade do corpo no instante 3,0 segundos (em m/s)?" 
+type[[2]] <- "num"
+solutions[[2]] <- explanations[[2]] <- respb 
+
+
+questions[[3]] <- "Qual é o instante em que o módulo da velocidade do corpo é 3,0 m/s?"
+type[[3]] <- "num"
+solutions[[3]] <- explanations[[3]] <- respc
+
+questions[[4]] <- "Qual é o módulo da aceleração do móvel (em $m/s^2$) entre os instantes 0 e 3 segundos"
+type[[4]] <- "num"
+solutions[[4]] <- explanations[[4]] <- respd
+
+
+include_supplement("Q05Acel.jpg")
+@
+\usepackage[portuguese]{babel}
+\begin{question}
+  
+O gráfico do módulo da velocidade v em relação ao tempo t de um corpo em movimento retilíneo é representado abaixo. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[height=5cm,keepaspectratio]{Q05Acel.jpg}
+\end{figure}
+
+Dois quadradinhos na vertical tem tamanho de $\Sexpr{v0}$ $m/s$ (ou seja, $v = \Sexpr{v0}$ $m/s$ indicado no gráfico).\\
+\\Qual das afirmações descreve o movimento do objeto?
+
+<<echo=FALSE, results=tex>>=
+answerlist(unlist(questions))
+@ 
+
+\end{question}
+
+\begin{solution}
+
+<<echo=FALSE, results=tex>>=
+answerlist(paste(unlist(explanations), ".", sep = ""))
+@
+
+\end{solution}
+
+
+%% META-INFORMATION
+%% \extype{cloze}
+%% \exsolution{\Sexpr{paste(solutions, collapse = "|")}}
+%% \exclozetype{\Sexpr{paste(type, collapse = "|")}}
+%% \exname{Q12MUV}
+%% \extol{\Sexpr{tol}}
+
